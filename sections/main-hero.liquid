@@ -1,6 +1,6 @@
 {{ 'main-hero.css' | asset_url | stylesheet_tag }}
 
-<div id="outer-div" style="background-image:url('{{ section.settings.mobile-background-image | img_url: ''}}')">
+<div id="outer-div" style="background-image:url('{{ section.settings.background-image | img_url: ''}}')">
   <h1>{{ section.settings.heading }}</h1>
   <p>{{ section.settings['sub-heading'] }}</p>
   <a class="main-button" href="#">order now</a>
