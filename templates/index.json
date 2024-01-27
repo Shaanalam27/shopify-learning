@@ -1,7 +1,7 @@
 {
   "sections": {
-    "slider_EG9xVW": {
-      "type": "slider",
+    "main_hero_CjAK4k": {
+      "type": "main-hero",
       "settings": {
       }
     },
@@ -74,7 +74,7 @@
     }
   },
   "order": [
-    "slider_EG9xVW",
+    "main_hero_CjAK4k",
     "image_banner",
     "featured_collection"
   ]
