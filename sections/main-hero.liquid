@@ -1,7 +1,18 @@
-<div style="background-image" : {{ section.settings['background-image'] }}>
+<div id="outer-div" style="background-image:url('{{ section.settings.background-image | img_url: ''}}')">
   <h1>{{ section.settings.heading }}</h1>
   <p>{{ section.settings['sub-heading'] }}</p>
 </div>
+
+{% stylesheet %}
+  #outer-div {
+    display: flex !important;
+    height: 100vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+{% endstylesheet %}
 {% schema %}
 {
   "name": "main hero",
