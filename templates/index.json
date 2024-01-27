@@ -1,5 +1,10 @@
 {
   "sections": {
+    "slider_Qm6qMQ": {
+      "type": "slider",
+      "settings": {
+      }
+    },
     "image_banner": {
       "type": "image-banner",
       "blocks": {
@@ -69,6 +74,7 @@
     }
   },
   "order": [
+    "slider_Qm6qMQ",
     "image_banner",
     "featured_collection"
   ]
