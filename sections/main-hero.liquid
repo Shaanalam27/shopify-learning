@@ -1,9 +1,16 @@
 <div id="outer-div" style="background-image:url('{{ section.settings.background-image | img_url: ''}}')">
   <h1>{{ section.settings.heading }}</h1>
   <p>{{ section.settings['sub-heading'] }}</p>
+  <a class="main-button" href="#">order now</a>
 </div>
 
 {% stylesheet %}
+  .main-button {
+    text-decoration: none;
+    background-color: black;
+    color: white;
+    padding: 15px 40px;
+  }
   #outer-div h1 {
     color: white;
   }
