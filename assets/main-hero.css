@@ -1,6 +1,9 @@
 
  /* css for slider */
 
+ #shopify-section-template--16481453768854__slider_MMHHfT{
+    overflow-x: hidden;
+ }
  #slider {
      position: relative;
      overflow: hidden;
