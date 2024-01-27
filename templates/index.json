@@ -4,7 +4,8 @@
       "type": "main-hero",
       "settings": {
         "heading": "New world",
-        "sub-heading": "hello"
+        "sub-heading": "hello",
+        "background-image": "shopify:\/\/shop_images\/experience_showcase_image.png"
       }
     },
     "image_banner": {
