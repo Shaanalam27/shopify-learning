@@ -1,10 +1,5 @@
 {
   "sections": {
-    "new_section_a9Jred": {
-      "type": "new-section",
-      "settings": {
-      }
-    },
     "image_banner": {
       "type": "image-banner",
       "blocks": {
@@ -74,7 +69,6 @@
     }
   },
   "order": [
-    "new_section_a9Jred",
     "image_banner",
     "featured_collection"
   ]
