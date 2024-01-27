@@ -20,6 +20,7 @@
 }
 
 #slider ul {
+    display: flex;  /* Use flexbox to make li elements appear in a row */
   position: relative;
   margin: 0;
   padding: 0;
@@ -28,12 +29,13 @@
 }
 
 #slider ul li {
+    flex: 0 0 100vw;  /* Each li takes up the full width of the viewport */
   position: relative;
   display: block;
   float : left;
   margin: 0;
   padding: 0;
-  width: 90%;
+  width: 100vw;
   height: 100vh;
   background: #ccc;
   text-align: center;
