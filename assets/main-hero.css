@@ -1,3 +1,9 @@
+ 
+   @media screen and (max-width: 767px) {
+       #outer-div {
+           background-image: url('{{ section.settings.mobile-background-image | img_url: ' '}}');
+       }
+   }
  .main-button {
      text-decoration: none;
      background-color: black;
