@@ -8,6 +8,11 @@
         "background-image": "shopify:\/\/shop_images\/experience_showcase_image.png"
       }
     },
+    "slider_MMHHfT": {
+      "type": "slider",
+      "settings": {
+      }
+    },
     "image_banner": {
       "type": "image-banner",
       "blocks": {
@@ -78,6 +83,7 @@
   },
   "order": [
     "main_hero_CjAK4k",
+    "slider_MMHHfT",
     "image_banner",
     "featured_collection"
   ]
