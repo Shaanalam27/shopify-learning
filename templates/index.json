@@ -1,16 +1,16 @@
 {
   "sections": {
+    "slider_MMHHfT": {
+      "type": "slider",
+      "settings": {
+      }
+    },
     "main_hero_CjAK4k": {
       "type": "main-hero",
       "settings": {
         "heading": "New world",
         "sub-heading": "hello",
         "background-image": "shopify:\/\/shop_images\/experience_showcase_image.png"
-      }
-    },
-    "slider_MMHHfT": {
-      "type": "slider",
-      "settings": {
       }
     },
     "image_banner": {
@@ -82,8 +82,8 @@
     }
   },
   "order": [
-    "main_hero_CjAK4k",
     "slider_MMHHfT",
+    "main_hero_CjAK4k",
     "image_banner",
     "featured_collection"
   ]
