@@ -1,5 +1,10 @@
 {
   "sections": {
+    "slider_MMHHfT": {
+      "type": "slider",
+      "settings": {
+      }
+    },
     "main_hero_CjAK4k": {
       "type": "main-hero",
       "settings": {
@@ -77,6 +82,7 @@
     }
   },
   "order": [
+    "slider_MMHHfT",
     "main_hero_CjAK4k",
     "image_banner",
     "featured_collection"
