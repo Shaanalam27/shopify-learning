@@ -1,36 +1,11 @@
+{{ 'main-hero.css' | asset_url | stylesheet_tag }}
+
 <div id="outer-div" style="background-image:url('{{ section.settings.background-image | img_url: ''}}')">
   <h1>{{ section.settings.heading }}</h1>
   <p>{{ section.settings['sub-heading'] }}</p>
   <a class="main-button" href="#">order now</a>
 </div>
 
-{% stylesheet %}
-  .main-button {
-    text-decoration: none;
-    background-color: black;
-    color: white;
-    padding: 15px 40px;
-  }
-  #outer-div h1 {
-    color: white;
-  }
-
-  #outer-div p {
-    color: white;
-  }
-
-  #outer-div {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 80vh;
-    width: 100%;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-  }
-{% endstylesheet %}
 {% schema %}
 {
   "name": "main hero",
