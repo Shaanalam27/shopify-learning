@@ -1,39 +1,45 @@
 <style>
-
   .main-button {
-      text-decoration: none;
-      background-color: black;
-      color: white;
-      padding: 15px 40px;
+    text-decoration: none;
+    background-color: black;
+    color: white;
+    padding: 15px 40px;
   }
 
   #outer-div h1 {
-      color: white;
+    color: white;
+    font-size: 30px;
+    line-height: 30px;
+    margin: 0px;
+    padding: 0px;
   }
 
   #outer-div p {
-      color: white;
+    color: white;
+    font-size: 20px;
+    line-height: 2newn0px;
+    margin: 0px;
+    padding: 0px;
   }
 
   #outer-div {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      height: 80vh;
-      width: 100%;
-     background-image : url('{{ section.settings.background-image | img_url: ''}}');
-      background-repeat: no-repeat;
-      background-position: center;
-      background-size: cover;
-
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+    width: 100%;
+    background-image: url('{{ section.settings.background-image | img_url: ''}}');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
   }
 
-   @media screen and (max-width: 767px) {
-        #outer-div {
-         background-image: url("{{ section.settings.mobile-background-image | img_url: ' ' }}");
-         }
-        }
+  @media screen and (max-width: 767px) {
+    #outer-div {
+      background-image: url("{{ section.settings.mobile-background-image | img_url: ' ' }}");
+    }
+  }
 </style>
 <div id="outer-div">
   <h1>{{ section.settings.heading }}</h1>
