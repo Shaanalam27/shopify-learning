@@ -10,7 +10,8 @@
       "settings": {
         "heading": "New world",
         "sub-heading": "hello",
-        "background-image": "shopify:\/\/shop_images\/experience_showcase_image.png"
+        "background-image": "shopify:\/\/shop_images\/experience_showcase_image.png",
+        "mobile-background-image": "shopify:\/\/shop_images\/hero_image.png"
       }
     },
     "image_banner": {
