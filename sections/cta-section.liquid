@@ -30,7 +30,7 @@
     height: 100%;
     margin: auto;
     gap: 20px;
-    padding: 20px;
+    padding: 50px;
   }
 
   .cta-button {
@@ -47,6 +47,10 @@
    @media screen and (max-width: 767px) {
     #outer-div-cta {
       background-image: url("{{ section.settings.mobile-background-image | img_url: ' ' }}");
+    }
+
+    #wrapper{
+    padding : 15px;
     }
   }
 </style>
