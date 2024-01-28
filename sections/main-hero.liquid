@@ -6,8 +6,8 @@
     width: 200px;
     height: 50px;
     display: flex;
-  align-items: center;
-  justify-content: center;
+    align-items: center;
+    justify-content: center;
   }
 
   #outer-div h1 {
@@ -33,18 +33,17 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    gap : 20px;
   }
-    #wrapper{
-      display: flex;
+  #wrapper {
+    display: flex;
     flex-direction: column;
     align-items: left;
     justify-content: center;
-    max-width : 1140px;
-    height : 100%;
-      margin : auto;
-
-    }
+    max-width: 1140px;
+    height: 100%;
+    margin: auto;
+    gap: 20px;
+  }
   @media screen and (max-width: 767px) {
     #outer-div {
       background-image: url("{{ section.settings.mobile-background-image | img_url: ' ' }}");
