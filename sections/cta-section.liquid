@@ -15,7 +15,13 @@
     padding: 20px;
   }
 
-  .cta-heading {
+  .cta-button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    padding: 30px;
   }
 </style>
 <div id="outer-div-another">
@@ -33,7 +39,11 @@
           </h3>
 
         {% when 'cta-button' %}
-          <a style="background-color : {{ block.settings.button-background }}" href="{{ block.settings.button-url }}">
+          <a
+            class="cta-button"
+            style="background-color : {{ block.settings.button-background }}"
+            href="{{ block.settings.button-url }}"
+          >
             {{- block.settings['button-text'] -}}
           </a>
       {% endcase %}
