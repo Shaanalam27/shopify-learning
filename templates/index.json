@@ -80,12 +80,30 @@
         "padding_top": 44,
         "padding_bottom": 36
       }
+    },
+    "cta_section_YQ3V8n": {
+      "type": "cta-section",
+      "blocks": {
+        "heading_tJKigW": {
+          "type": "heading",
+          "settings": {
+            "text-content": "hello",
+            "text-color": "#ff1010"
+          }
+        }
+      },
+      "block_order": [
+        "heading_tJKigW"
+      ],
+      "settings": {
+      }
     }
   },
   "order": [
     "slider_MMHHfT",
     "main_hero_CjAK4k",
     "image_banner",
-    "featured_collection"
+    "featured_collection",
+    "cta_section_YQ3V8n"
   ]
 }
