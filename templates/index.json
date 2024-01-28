@@ -94,7 +94,7 @@
         "sub_heading_7zze4e": {
           "type": "sub-heading",
           "settings": {
-            "text-content": "this is mt sub heading",
+            "text-content": "this is my sub heading",
             "text-color": "#000000"
           }
         },
@@ -113,6 +113,7 @@
         "cta_button_HV43YL"
       ],
       "settings": {
+        "background-color": "#fff"
       }
     }
   },
