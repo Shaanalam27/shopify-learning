@@ -90,10 +90,19 @@
             "text-content": "hello",
             "text-color": "#ff1010"
           }
+        },
+        "cta_button_HV43YL": {
+          "type": "cta-button",
+          "settings": {
+            "button-text": "",
+            "button-background": "#000000",
+            "button-url": ""
+          }
         }
       },
       "block_order": [
-        "heading_tJKigW"
+        "heading_tJKigW",
+        "cta_button_HV43YL"
       ],
       "settings": {
       }
