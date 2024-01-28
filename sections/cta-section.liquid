@@ -31,6 +31,11 @@
           <h3 class="cta-sub-heading" style="color : {{ block.settings.text-color }}">
             {{ block.settings['text-content'] }}
           </h3>
+
+        {% when 'cta-button' %}
+          <a style="background-color : {{ block.settings.button-background }}" href="{{ block.settings.button-url }}">
+            {{- block.settings['button-text'] -}}
+          </a>
       {% endcase %}
     {% endfor %}
   </div>
@@ -71,6 +76,28 @@
           "type": "color",
           "label": "Link text",
           "default": "#000000"
+        }
+      ]
+    },
+    {
+      "type": "cta-button",
+      "name": "cta-button",
+      "settings": [
+        {
+          "id": "button-text",
+          "type": "text",
+          "label": "button-text"
+        },
+        {
+          "id": "button-background",
+          "type": "color",
+          "label": "button color",
+          "default": "#000000"
+        },
+        {
+          "id": "button-url",
+          "type": "url",
+          "label": "button link"
         }
       ]
     }
