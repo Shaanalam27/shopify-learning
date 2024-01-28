@@ -62,7 +62,100 @@
 {
   "name": "main hero 2",
   "settings": [],
+  "blocks": [
+    {
+      "type": "heading",
+      "name": "heading-text",
+      "settings": [
+        {
+          "id": "text-content",
+          "type": "text",
+          "label": "text content"
+        },
+        {
+          "id": "text-color",
+          "type": "color",
+          "label": "Link text",
+          "default": "#00000"
+        }
+      ]
+    },
+    {
+      "type": "sub-heading",
+      "name": "sub-heading",
+      "settings": [
+        {
+          "id": "text-content",
+          "type": "text",
+          "label": "text content"
+        },
+        {
+          "id": "text-color",
+          "type": "color",
+          "label": "Link text",
+          "default": "#00000"
+        }
+      ]
+    }
+  ],
 
   "presets": [{ "name": "main hero 2" }]
 }
 {% endschema %}
+
+{% comment %}
+  {% for block in section.blocks %}
+    {% case block.type %}
+      {% when 'heading' %}
+        <h1>{{ block.settings['text-content'] }}</h1>
+
+      {% when 'sub-heading' %}
+        <h3>{{ block.settings['text-content'] }}</h3>
+    {% endcase %}
+  {% endfor %}
+
+  {% schema %}
+  {
+    "name": "a basic CTA",
+    "max_blocks": 5,
+    "settings": [],
+    "blocks": [
+      {
+        "type": "heading",
+        "name": "heading-text",
+        "settings": [
+          {
+            "id": "text-content",
+            "type": "text",
+            "label": "text content"
+          },
+          {
+            "id": "text-color",
+            "type": "color",
+            "label": "Link text",
+            "default": "#00000"
+          }
+        ]
+      },
+      {
+        "type": "sub-heading",
+        "name": "sub-heading",
+        "settings": [
+          {
+            "id": "text-content",
+            "type": "text",
+            "label": "text content"
+          },
+          {
+            "id": "text-color",
+            "type": "color",
+            "label": "Link text",
+            "default": "#00000"
+          }
+        ]
+      }
+    ],
+    "presets": [{ "name": "a CTA" }]
+  }
+  {% endschema %}
+{% endcomment %}
