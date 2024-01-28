@@ -91,6 +91,13 @@
             "text-color": "#ff1010"
           }
         },
+        "sub_heading_7zze4e": {
+          "type": "sub-heading",
+          "settings": {
+            "text-content": "this is mt sub heading",
+            "text-color": "#000000"
+          }
+        },
         "cta_button_HV43YL": {
           "type": "cta-button",
           "settings": {
@@ -98,20 +105,12 @@
             "button-background": "#000000",
             "button-url": ""
           }
-        },
-        "cta_button_8ppGN6": {
-          "type": "cta-button",
-          "settings": {
-            "button-text": "",
-            "button-background": "#000000",
-            "button-url": ""
-          }
         }
       },
       "block_order": [
         "heading_tJKigW",
-        "cta_button_HV43YL",
-        "cta_button_8ppGN6"
+        "sub_heading_7zze4e",
+        "cta_button_HV43YL"
       ],
       "settings": {
       }
