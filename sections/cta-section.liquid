@@ -1,49 +1,54 @@
-<footer class="footer">
-  {% for block in section.blocks %}
-    {% case block.type %}
-      {% when 'link' %}
-        <div class="link" {{ block.shopify_attributes }}>
-          {{ block.settings.linktext | link_to: block.settings.linkurl }}
-        </div>
+{% for block in section.blocks %}
+  {% case block.type %}
+    {% when 'heading' %}
+      <h1>{{ block.settings['text-content'] }}</h1>
 
-      {% when 'custom-text' %}
-        <div class="text" {{ block.shopify_attributes }}>{{ block.settings['custom-text-field'] }}</div>
-    {% endcase %}
-  {% endfor %}
-</footer>
+    {% when 'sub-heading' %}
+      <h3>{{ block.settings['text-content'] }}</h3>
+  {% endcase %}
+{% endfor %}
 
 {% schema %}
 {
-  "name": "Footer",
-  "max_blocks": 8,
+  "name": "a basic CTA",
+  "max_blocks": 5,
+  "settings": [],
   "blocks": [
     {
-      "type": "link",
-      "name": "Link",
+      "type": "heading",
+      "name": "heading-text",
       "settings": [
         {
-          "id": "linkurl",
-          "type": "url",
-          "label": "URL link"
+          "id": "text-content",
+          "type": "text",
+          "label": "text content"
         },
         {
-          "id": "linktext",
-          "type": "text",
-          "label": "Link text"
+          "id": "text-color",
+          "type": "color",
+          "label": "Link text",
+          "default": "#00000"
         }
       ]
     },
     {
-      "type": "custom-text",
-      "name": "Custom Text",
+      "type": "sub-heading",
+      "name": "sub-heading",
       "settings": [
         {
-          "id": "custom-text-field",
-          "type": "textarea",
-          "label": "Text"
+          "id": "text-content",
+          "type": "text",
+          "label": "text content"
+        },
+        {
+          "id": "text-color",
+          "type": "color",
+          "label": "Link text",
+          "default": "#00000"
         }
       ]
     }
-  ]
+  ],
+  "presets": [{ "name": "a CTA" }]
 }
 {% endschema %}
