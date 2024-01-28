@@ -16,7 +16,17 @@
   }
 </style>
 <div id="outer-div">
-  <div id="wrapper"></div>
+  <div id="wrapper">
+    {% for block in section.blocks %}
+      {% case block.type %}
+        {% when 'heading' %}
+          <h1>{{ block.settings['text-content'] }}</h1>
+
+        {% when 'sub-heading' %}
+          <h3>{{ block.settings['text-content'] }}</h3>
+      {% endcase %}
+    {% endfor %}
+  </div>
 </div>
 {% schema %}
 {
