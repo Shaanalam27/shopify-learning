@@ -1,16 +1,21 @@
 <style>
-  #outer-div-another {
+  #outer-div-cta {
     height: 80vh;
     width: 100%;
+     background-image: url('{{ section.settings.background-image | img_url: ''}}');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color : {{ section.settings.background-color }};
   }
 
-  #outer-div-another h1 {
+  #outer-div-cta h1 {
     font-size: 5rem;
     line-height: 5rem;
     margin: 0;
     padding: 0;
   }
-  #outer-div-another h3 {
+  #outer-div-cta h3 {
     font-size: 2rem;
     line-height: 2rem;
     margin: 0;
@@ -38,8 +43,15 @@
     text-decoration: none;
     color: white;
   }
+
+   @media screen and (max-width: 767px) {
+    #outer-div-cta {
+      background-image: url("{{ section.settings.mobile-background-image | img_url: ' ' }}");
+    }
+  }
 </style>
-<div id="outer-div-another">
+
+<div id="outer-div-cta">
   <div id="wrapper">
     {% for block in section.blocks %}
       {% case block.type %}
@@ -68,7 +80,24 @@
 {% schema %}
 {
   "name": "cta section",
-  "settings": [],
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "background-image",
+      "label": "background-image"
+    },
+    {
+      "type": "image_picker",
+      "id": "mobile-background-image",
+      "label": "Mobile background image"
+    },
+    {
+      "id": "background-color",
+      "type": "color",
+      "label": "background color",
+      "default": "#000000"
+    }
+  ],
   "blocks": [
     {
       "type": "heading",
