@@ -29,6 +29,9 @@
   img {
     width: 100%;
   }
+  .image_anchor {
+    width: 80%;
+  }
 </style>
 
 {% comment %}
@@ -39,7 +42,7 @@
 {% endcomment %}
 <div class="outer-slick-slider-section">
   {% for product in collections['all-products'].products %}
-    <div class="inner-slider-slick">
+    <div class="image-anchor" class="inner-slider-slick">
       <a href="{{ product.url }}">
         <img src="{{ product.featured_media | img_url: '1200px' }}" alt="{{ product.title }}">
       </a>
