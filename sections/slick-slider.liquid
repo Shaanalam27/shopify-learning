@@ -28,7 +28,7 @@
   </div>
 {% endcomment %}
 <div class="outer-slick-slider-section">
-  {% for product in collection.products %}
+  {% for product in collection['all-products'] %}
     <h1>{{ product.featured_image }}</h1>
   {% endfor %}
 </div>
