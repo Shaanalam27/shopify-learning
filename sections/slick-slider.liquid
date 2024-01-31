@@ -16,7 +16,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 30px;
+    gap: 20px;
   }
   .spacer {
     height: 20px;
@@ -46,6 +46,7 @@
       <a class="image-anchor" href="{{ product.url }}">
         <img src="{{ product.featured_media | img_url: '1200px' }}" alt="{{ product.title }}">
       </a>
+      <p>{{ product.price }}</p>
       <a href="{{ product.url }}">
         <h1>{{ product.title }}</h1>
       </a>
