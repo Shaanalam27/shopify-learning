@@ -111,8 +111,8 @@
         "background-color": "#f5f5f5"
       }
     },
-    "new_slick_slider_drE7iL": {
-      "type": "new-slick-slider",
+    "slick_slider_qb6LQC": {
+      "type": "slick-slider",
       "settings": {
       }
     }
@@ -122,6 +122,6 @@
     "image_banner",
     "featured_collection",
     "cta_section_YQ3V8n",
-    "new_slick_slider_drE7iL"
+    "slick_slider_qb6LQC"
   ]
 }
