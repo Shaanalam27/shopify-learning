@@ -26,7 +26,9 @@
 <div class="spacer"></div>
 <div class="outer-slick-slider-section">
   {% for product in collection.products -%}
-    <h1>{{ product.title }}</h1>
+    <div class="inner-slider-slick">
+      <h1>{{ product.title }}</h1>
+    </div>
   {%- endfor %}
 </div>
 
