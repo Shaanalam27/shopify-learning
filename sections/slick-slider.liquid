@@ -11,11 +11,21 @@
     margin: auto 10px;
     display: inline-block;
   }
+  .spacer {
+    height: 20px;
+    width: 100%;
+  }
 </style>
 
 <div class="outer-slick-slider-section">
   <div class="inner-slider-slick">hello</div>
   <div class="inner-slider-slick">hello</div>
+</div>
+<div class="spacer"></div>
+<div class="outer-slick-slider-section">
+  {% for product in collection.products -%}
+    <h1>{{ product.title }}</h1>
+  {%- endfor %}
 </div>
 
 {% schema %}
