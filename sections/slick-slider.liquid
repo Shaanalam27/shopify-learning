@@ -28,11 +28,11 @@
   </div>
 {% endcomment %}
 <div class="outer-slick-slider-section">
-  <div class="inner-slider-slick">
-    {% for product in collections['all-products'].products %}
+  {% for product in collections['all-products'].products %}
+    <div class="inner-slider-slick">
       <h1>{{ product.title }}</h1>
-    {% endfor %}
-  </div>
+    </div>
+  {% endfor %}
 </div>
 {% schema %}
 {
