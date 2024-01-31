@@ -30,6 +30,7 @@
 <div class="outer-slick-slider-section">
   {% for product in collections['all-products'].products %}
     <div class="inner-slider-slick">
+      {{ product.featured_image }}
       <h1>{{ product.title }}</h1>
     </div>
   {% endfor %}
