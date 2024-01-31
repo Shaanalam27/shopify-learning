@@ -42,8 +42,8 @@
 {% endcomment %}
 <div class="outer-slick-slider-section">
   {% for product in collections['all-products'].products %}
-    <div class="image-anchor" class="inner-slider-slick">
-      <a href="{{ product.url }}">
+    <div class="inner-slider-slick">
+      <a class="image-anchor" href="{{ product.url }}">
         <img src="{{ product.featured_media | img_url: '1200px' }}" alt="{{ product.title }}">
       </a>
       <a href="{{ product.url }}">
