@@ -1,6 +1,32 @@
 {% schema %}
   {
-    "name": "Section name",
-    "settings": []
+    "name": "faq section",
+    "settings": [],
+    "blocks": [
+    {
+      "type" : "question",
+      "name" : "question",
+      "settings" : [
+        {
+        "type" : "text",
+          "id" : "question",
+          "label" : "question"
+        }
+      ]
+    },
+       {
+      "type" : "answer",
+      "name" : "answer",
+      "settings" : [
+        {
+        "type" : "text",
+          "id" : "answer",
+          "label" : "answer"
+        }
+      ]
+    }
+  ],
+
+    "presets" : [{"name" : "faq-section"}]
   }
 {% endschema %}
