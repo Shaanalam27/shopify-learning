@@ -1,3 +1,55 @@
+<style>
+
+  .faq {
+     border-radius: 8px;
+     overflow: hidden;
+     padding-bottom:1em;
+}
+ .faq .faq__toggle {
+     display: none;
+}
+ .faq__question {
+     background-color: #f2f2f2;
+     display:flex;
+     justify-content: space-between;
+     padding: 1em;
+     color: #121212;
+     cursor: pointer;
+}
+ .faq__question:hover {
+     background-color: #eaeaea;
+}
+ .faq__question::after {
+     content: '276F';
+     transition: all .5s;
+     float: right;
+}
+ .faq__toggle:checked + .faq__question::after {
+     transform: rotate(90deg);
+}
+ .faq__answer {
+     max-height: 0;
+     overflow: hidden;
+     transition: all .4s;
+     padding: 0 1em;
+}
+ .faq__toggle:checked ~ .faq__answer {
+     max-height: 100vh;
+     padding: 1em;
+}
+</style>
+
+<div class="page-width faq">
+    <h2 class="h1">Frequently Asked Questions</h2>
+    {% for block in section.blocks  %} 
+    <div class="faq__row">
+        <input type="checkbox" id="question-{{ forloop.index }}" class="faq__toggle">
+        <label for="question-{{ forloop.index }}" class="faq__question">{{ block.settings.question }}</label>
+        <div class="faq__answer">{{ block.settings.answer }}</div>
+    </div>
+  {% endfor %}
+</div>
+
 {% schema %}
   {
     "name": "faq section",
@@ -11,18 +63,13 @@
         "type" : "text",
           "id" : "question",
           "label" : "question"
-        }
-      ]
-    },
-       {
-      "type" : "answer",
-      "name" : "answer",
-      "settings" : [
-        {
+        },
+         {
         "type" : "text",
           "id" : "answer",
           "label" : "answer"
         }
+
       ]
     }
   ],
