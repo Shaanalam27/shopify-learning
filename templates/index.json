@@ -48,6 +48,31 @@
         "show_text_below": false
       }
     },
+    "faq_cxGWEU": {
+      "type": "faq",
+      "blocks": {
+        "question_dybReB": {
+          "type": "question",
+          "settings": {
+            "question": "hello world",
+            "answer": "hey"
+          }
+        },
+        "question_KBfK8y": {
+          "type": "question",
+          "settings": {
+            "question": "this is you",
+            "answer": "hey"
+          }
+        }
+      },
+      "block_order": [
+        "question_dybReB",
+        "question_KBfK8y"
+      ],
+      "settings": {
+      }
+    },
     "featured_collection": {
       "type": "featured-collection",
       "settings": {
@@ -120,6 +145,7 @@
   "order": [
     "main_hero_CjAK4k",
     "image_banner",
+    "faq_cxGWEU",
     "featured_collection",
     "cta_section_YQ3V8n",
     "slick_slider_qb6LQC"
