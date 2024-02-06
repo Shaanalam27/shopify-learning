@@ -223,3 +223,66 @@ p {
     flex-direction: column;
 }
 
+/*-------------- css for second section ------------*/
+.benefits-section {
+    width: 100%;
+}
+
+.inner-benefits-section {
+    max-width: 1400px;
+    margin: auto;
+    padding: 0px 50px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+   
+}
+
+.benefits-left {
+    width: 50%;
+    padding-right: 30px;
+
+}
+
+.benefits-left img {
+    width: 100%;
+    position: sticky;
+        top: 0;
+}
+
+.benefits-right {
+    width: 50%;
+    display: flex;
+
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 100px;
+}
+
+.benefit-inner-wrapper {
+    display: flex;
+
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.benefit-inner-wrapper .red-heading {
+    color: #9c3246;
+
+}
+
+.benefit-inner-wrapper h1 {
+    font-family: "Satoshi", sans-serif !important;
+    font-size: 40px;
+    letter-spacing: -1px;
+    line-height: 35px;
+    color: #9c3246;
+}
+
+.benefit-inner-wrapper h1 span {
+    font-family: "dutch", sans-serif !important;
+    font-style: italic;
+    font-weight: 400;
+}
