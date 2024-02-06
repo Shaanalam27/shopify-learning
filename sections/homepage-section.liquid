@@ -1,9 +1,75 @@
-<style></style>
+   <style>
+      @font-face {
+        font-family: "Satoshi";
+        src: url("https://cdn.shopify.com/s/files/1/0631/5743/6566/files/Satoshi-Medium.woff2?v=1707203625")
+          format("woff2");
+        font-weight: 500;
+        font-style: normal;
+      }
 
-<div id="main-wrapper">
-  
-</div>
+      @font-face {
+        font-family: "Satoshi";
+        src: url("https://cdn.shopify.com/s/files/1/0631/5743/6566/files/Satoshi-Bold.woff2?v=1707203625")
+          format("woff2");
+        font-weight: 700;
+        font-style: normal;
+      }
 
+      @font-face {
+        font-family: "Satoshi";
+        src: url("https://cdn.shopify.com/s/files/1/0631/5743/6566/files/Satoshi-Regular.woff2?v=1707203835")
+          format("woff2");
+        font-weight: 400;
+        font-style: normal;
+      }
+
+      @font-face {
+        font-family: "dutch";
+        src: url("https://cdn.shopify.com/s/files/1/0631/5743/6566/files/Dutch801_Rm_WGL4_BT_Roman.ttf?v=1707204263")
+          format("woff2");
+
+        font-style: normal;
+      }
+      .new1 {
+        font-family: "dutch", sans-serif;
+        font-weight: 700;
+        font-size: 30px;
+      }
+      .new2 {
+        font-family: sans-serif;
+        font-weight: 700;
+        font-size: 30px;
+      }
+
+      .hero {
+        height: 90vh;
+        width: 100%;
+        background-image: url(https://cdn.shopify.com/s/files/1/0631/5743/6566/files/hero_image_678d02df-8f67-49cf-ac6b-59f531eba4eb.png?v=1707203317);
+        background-size: cover;
+        background-position: center center;
+      }
+
+      .inner-hero {
+        height: 100%;
+        max-width: 1300px;
+        margin: auto;
+        padding: 0px 50px;
+        font-family: "Satoshi", sans-serif;
+        font-weight: 400;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+      }
+    </style>
+
+  <div id="wrapper">
+      <div class="hero">
+        <div class="inner-hero">
+          <h1 class="new1">hello world</h1>
+          <h1 class="new2">hello world</h1>
+        </div>
+      </div>
+    </div>
 {% schema %}
   {
     "name": "purefem section",
