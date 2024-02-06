@@ -28,10 +28,16 @@
       "settings": {
         "title": ""
       }
+    },
+    "homepage_section2_DNUimF": {
+      "type": "homepage-section2",
+      "settings": {
+      }
     }
   },
   "order": [
     "homepage_section_bG38N7",
-    "tabs_UPAUwq"
+    "tabs_UPAUwq",
+    "homepage_section2_DNUimF"
   ]
 }
