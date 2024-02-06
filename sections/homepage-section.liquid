@@ -1,4 +1,4 @@
- <style>
+  <style>
       @font-face {
         font-family: "Satoshi";
         src: url("https://cdn.shopify.com/s/files/1/0631/5743/6566/files/Satoshi-Medium.woff2?v=1707203625")
@@ -82,7 +82,7 @@
 
       .para-text {
         font-size: 18px;
-        line-height: 18px;
+        line-height: 20px;
         color: white;
       }
       .cta-button {
@@ -96,8 +96,8 @@
       }
       .cta-text {
         font-family: "dutch", sans-serif !important;
-        font-size: 23px;
-        line-height: 23px;
+        font-size: 20px;
+        line-height: 20px;
         font-style: italic;
         letter-spacing: -1px;
         font-weight: 400 !important;
@@ -128,8 +128,70 @@
         width: 100px;
         object-fit: contain;
       }
-    </style>
+      .about {
+        width: 100%;
+        height: 80vh;
+        position: relative;
+      }
+      .inner-about-overflow1 {
+        position: relative;
+        max-width: 1400px;
+        z-index: 2;
+        padding: 0px 50px;
+        margin: auto;
+        height: 80vh;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        gap: 20px;
+      }
+      .about-heading-1 {
+        font-family: "satoshi", sans-serif !important;
+        font-weight: 700;
+        font-size: 50px;
+        line-height: 45px;
+        color: #9c3246;
+      }
+      .about-heading-2 {
+        font-family: "dutch", sans-serif !important;
+        font-weight: 400;
+        font-size: 50px;
+        line-height: 45px;
+        font-style: italic;
+        color: #9c3246;
+      }
+      .inner-about-overflow2 {
+        position: absolute;
+        top: 0;
+        width: 100%;
+        z-index: 1;
+        height: 80vh;
+        display: flex;
+        flex-direction: row;
+      }
+      .about-left {
+        width: 50%;
+        background-color: #f9f3f4;
+        height: 100%;
+      }
+      .about-right {
+        width: 50%;
 
+        height: 100%;
+      }
+      .about-right img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      .black-color {
+        color: black;
+      }
+      .red-color-background {
+        background-color: #9c3246;
+        color: white;
+      }
+    </style>
  <div id="wrapper">
       <div class="hero">
         <div class="inner-hero">
@@ -178,6 +240,34 @@
             src="https://cdn.shopify.com/s/files/1/0631/5743/6566/files/2560px-Womenshealthlogo_5.svg?v=1707208299"
             alt=""
           />
+        </div>
+      </div>
+      <div class="about">
+        <div class="inner-about-overflow1">
+          <div class="heading-wrapper">
+            <h1 class="about-heading-1">A balance</h1>
+            <h1 class="about-heading-2">For your health.</h1>
+          </div>
+          <p class="para-text black-color">
+            An assortment of health supplements crafted to support<br />the
+            everyday well-being of the modern woman.
+          </p>
+          <a href="#" class="cta-button"
+            ><p class="cta-text red-color-background">Shop purefemm</p>
+            <img
+              class="cta-image"
+              src="https://cdn.shopify.com/s/files/1/0631/5743/6566/files/Frame_3.svg?v=1707212091"
+              alt=""
+          /></a>
+        </div>
+        <div class="inner-about-overflow2">
+          <div class="about-left"></div>
+          <div class="about-right">
+            <img
+              src="https://cdn.shopify.com/s/files/1/0631/5743/6566/files/Pink_1.png?v=1707210881"
+              alt=""
+            />
+          </div>
         </div>
       </div>
     </div>
