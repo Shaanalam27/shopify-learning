@@ -1,4 +1,4 @@
-   <style>
+ <style>
       @font-face {
         font-family: "Satoshi";
         src: url("https://cdn.shopify.com/s/files/1/0631/5743/6566/files/Satoshi-Medium.woff2?v=1707203625")
@@ -30,17 +30,16 @@
 
         font-style: normal;
       }
-      .new1 {
-        font-family: "dutch", sans-serif !important;
-        font-weight: 400 !important;
-        font-size: 30px;
-      }
-      .new2 {
-        font-family: sans-serif;
-        font-weight: 700;
-        font-size: 30px;
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
       }
 
+      p {
+        font-family: "Satoshi", sans-serif !important;
+      }
       .hero {
         height: 90vh;
         width: 100%;
@@ -51,22 +50,57 @@
 
       .inner-hero {
         height: 100%;
-        max-width: 1300px;
+        max-width: 1400px;
         margin: auto;
         padding: 0px 50px;
         font-family: "Satoshi", sans-serif;
         font-weight: 400;
         display: flex;
-        align-items: center;
-        justify-content: flex-start;
+        align-items: left;
+        justify-content: center;
+        flex-direction: column;
+      }
+      .rating-section img {
+        width: 300px;
+      }
+      .heading-1 {
+        font-family: "satoshi", sans-serif !important;
+        font-weight: 700;
+        font-size: 3.5rem;
+        line-height: 3rem;
+        color: white;
+      }
+      .heading-2 {
+        font-family: "dutch", sans-serif !important;
+        font-weight: 400;
+        font-size: 3.5rem;
+        line-height: 3rem;
+        font-style: italic;
+        color: white;
+      }
+
+      .para-text {
+        font-size: 1rem;
+        line-height: 1rem;
+        color: white;
       }
     </style>
 
-  <div id="wrapper">
+ <div id="wrapper">
       <div class="hero">
         <div class="inner-hero">
-          <h1 class="new1">hello world</h1>
-          <h1 class="new2">hello world</h1>
+          <div class="rating-section">
+            <img
+              src="https://cdn.shopify.com/s/files/1/0631/5743/6566/files/stars-svg.svg?v=1707205001"
+              alt="stars-svg"
+            />
+          </div>
+          <h1 class="heading-1">The ultimate control</h1>
+          <h1 class="heading-2">over your health</h1>
+          <p class="para-text">
+            An assortment of health supplements crafted to support<br />the
+            everyday well-being of the modern woman.
+          </p>
         </div>
       </div>
     </div>
