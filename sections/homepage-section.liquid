@@ -1,4 +1,4 @@
- <style>
+<style>
       @font-face {
         font-family: "Satoshi";
         src: url("https://cdn.shopify.com/s/files/1/0631/5743/6566/files/Satoshi-Medium.woff2?v=1707203625")
@@ -59,12 +59,12 @@
         align-items: left;
         justify-content: center;
         flex-direction: column;
-        gap : 10px;
+        gap: 20px;
       }
       .rating-section img {
         width: 300px;
       }
-       .heading-1 {
+      .heading-1 {
         font-family: "satoshi", sans-serif !important;
         font-weight: 700;
         font-size: 55px;
@@ -78,18 +78,41 @@
         line-height: 50px;
         font-style: italic;
         color: white;
-             margin-top: -10px;
-        margin-bottom : 10px;
       }
 
-       .para-text {
-        font-size: 18px;    
-   line-height: 18px;
+      .para-text {
+        font-size: 18px;
+        line-height: 18px;
         color: white;
+      }
+      .cta-button {
+        text-decoration: none;
+        display: flex;
+        height: 60px;
+        width: 270px;
+      }
+      .cta-image {
+        height: 100%;
+      }
+      .cta-text {
+        font-family: "dutch", sans-serif !important;
+        font-size: 23px;
+        line-height: 23px;
+        font-style: italic;
+        letter-spacing: -1px;
+        font-weight: 400 !important;
+        border-radius: 30px;
+        background-color: rgb(255, 255, 255);
+        width: 200px;
+        height: 60px;
+        color: #9c3246;
+        display: flex;
+        align-items: center;
+        justify-content: center;
       }
     </style>
 
- <div id="wrapper">
+  <div id="wrapper">
       <div class="hero">
         <div class="inner-hero">
           <div class="rating-section">
@@ -98,12 +121,21 @@
               alt="stars-svg"
             />
           </div>
-          <h1 class="heading-1">The ultimate control</h1>
-          <h1 class="heading-2">over your health</h1>
+          <div class="heading-wrapper">
+            <h1 class="heading-1">The ultimate control</h1>
+            <h1 class="heading-2">over your health</h1>
+          </div>
           <p class="para-text">
             An assortment of health supplements crafted to support<br />the
             everyday well-being of the modern woman.
           </p>
+          <a href="#" class="cta-button"
+            ><p class="cta-text">Shop now</p>
+            <img
+              class="cta-image"
+              src="https://cdn.shopify.com/s/files/1/0631/5743/6566/files/button-icon.svg"
+              alt=""
+          /></a>
         </div>
       </div>
     </div>
