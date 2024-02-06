@@ -4,9 +4,34 @@
       "type": "homepage-section",
       "settings": {
       }
+    },
+    "tabs_UPAUwq": {
+      "type": "tabs",
+      "blocks": {
+        "tab_prkxKH": {
+          "type": "tab",
+          "settings": {
+            "collection": "men"
+          }
+        },
+        "tab_QUN3w4": {
+          "type": "tab",
+          "settings": {
+            "collection": "women"
+          }
+        }
+      },
+      "block_order": [
+        "tab_prkxKH",
+        "tab_QUN3w4"
+      ],
+      "settings": {
+        "title": ""
+      }
     }
   },
   "order": [
-    "homepage_section_bG38N7"
+    "homepage_section_bG38N7",
+    "tabs_UPAUwq"
   ]
 }
