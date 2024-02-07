@@ -19,6 +19,9 @@
               <ul class="">
                {%- for product in block.settings.collection.products limit: 8 -%}
                <li class="">
+              <a class="image-anchor" href="{{ product.url }}">
+        <img src="{{ product.featured_media | img_url: '1200px' }}" alt="{{ product.title }}">
+      </a>
                 <h1>{{ product.title }}</h1>
                </li>
               {%- endfor -%}
