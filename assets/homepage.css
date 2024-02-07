@@ -342,7 +342,8 @@ position: sticky;
 }
 
 .tabs-list-box li{
-
+display : flex;
+  align-items : center;
 }
 .product-card-image{
   width : 100%;
