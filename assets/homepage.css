@@ -333,6 +333,10 @@ position: sticky;
 
 .tabs-list-box{
   list-style-type : none !important;
+  display : flex;
+  align-items : center;
+  justify-content : space-between;
+  flex-wrap : nowrap;
 }
 .tabs-list-box li{
 list-style-type : none !important;
