@@ -334,7 +334,7 @@ position: sticky;
 .tabs-list-box{
   list-style-type : none !important;
   display : grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   gap : 10%;
   max-width : 1400px;
   margin : auto;
