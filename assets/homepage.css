@@ -359,6 +359,7 @@ color : #9C3246;
 .single-tab-list p{
   font-size : 14px;
   letter-spacing : -0.5px;
+  font-weight : 400;
 }
 .single-tab-list .price{
    font-size : 13px;
