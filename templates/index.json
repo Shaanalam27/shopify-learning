@@ -13,10 +13,17 @@
           "settings": {
             "collection": "best-sellers"
           }
+        },
+        "tab_3D8Fkt": {
+          "type": "tab",
+          "settings": {
+            "collection": "bundles"
+          }
         }
       },
       "block_order": [
-        "tab_zUrhfx"
+        "tab_zUrhfx",
+        "tab_3D8Fkt"
       ],
       "settings": {
         "title": ""
