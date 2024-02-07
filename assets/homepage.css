@@ -343,4 +343,5 @@ position: sticky;
 }
 .tabs-list-box li{
 list-style-type : none !important;
+  width : 30%;
 }
