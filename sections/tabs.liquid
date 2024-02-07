@@ -24,6 +24,7 @@
       </a>
                 <h1>{{ product.title }}</h1>
                  <p>{{ product.description }}</p>
+                 <p class="price">Starts<strong>{{ product.price | money_with_currency }}</strong></p>
                </li>
               {%- endfor -%}
               </ul>
