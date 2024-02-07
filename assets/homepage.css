@@ -348,6 +348,7 @@ display : flex;
 }
 .product-card-image{
   width : 100%;
+  border-radius : 10px;
 }
 .single-tab-list h1{
 color : #9C3246;
