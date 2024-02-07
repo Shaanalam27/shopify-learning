@@ -25,6 +25,11 @@
                 <h1>{{ product.title }}</h1>
                  <p>{{ product.description }}</p>
                  <p class="price">Starts at <strong>{{ product.price | money_with_currency }}</strong></p>
+                 <form method="post" action="/cart/add">
+  <input type="hidden" name="id" value="{{ product.variants.first.id }}" />
+  <input min="1" type="number" id="quantity" name="quantity" value="1"/>
+  <input type="submit" value="Add to cart" class="btn" />
+</form>
                </li>
               {%- endfor -%}
               </ul>
