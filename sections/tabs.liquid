@@ -9,6 +9,7 @@
       <h2 class="h1">{{ section.settings.title }}</h2>
     {%  endif  %}
     <div id="tabs" class="tabs">
+      {%  assign tabContent = '' %}
       <ul>
       {%  for block in section.blocks %}
        {%  assign collection = collections[block.settings.collection] %}
@@ -27,6 +28,7 @@
         {%  assign tabContent = tabContent | append: content %}
       {%  endfor %}  
       </ul>   
+      {{ tabContent }}
     </div>  
   </div> 
     <script>
