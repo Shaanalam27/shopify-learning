@@ -16,9 +16,9 @@
         <li><a href="#tabs-{{ collection.id }}">{{ collection.title  }}</a></li>
         {%  capture content  %}
             <div id="tabs-{{ collection.id }}">
-              <ul class="grid product-grid grid--2-col-tablet-down  grid--4-col-desktop">
+              <ul class="">
                {%- for product in block.settings.collection.products limit: 8 -%}
-               <li class="grid__item scroll-trigger animate--slide-in">
+               <li class="">
                 <h1>{{ product.title }}</h1>
                </li>
               {%- endfor -%}
