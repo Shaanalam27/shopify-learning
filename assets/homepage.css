@@ -336,7 +336,7 @@ position: sticky;
   display : flex;
   align-items : center;
   justify-content : space-between;
-  flex-wrap : nowrap;
+  flex-wrap : wrap;
   max-width : 1400px;
   margin : auto;
   padding : 50px;
