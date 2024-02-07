@@ -341,9 +341,7 @@ position: sticky;
   margin : auto;
   padding : 50px;
 }
-.tabs-list-box>* {
-  flex: 0 0 30%;
-}
-.tabs-list-box li{
 
+.tabs-list-box li{
+flex: 0 0 30%;
 }
