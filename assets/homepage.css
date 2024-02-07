@@ -349,3 +349,8 @@ display : flex;
 .product-card-image{
   width : 100%;
 }
+.single-tab-list h1{
+color : #9C3246;
+  font-size : 40px;
+  
+}
