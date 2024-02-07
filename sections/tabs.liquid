@@ -16,9 +16,9 @@
         <li><a href="#tabs-{{ collection.id }}">{{ collection.title  }}</a></li>
         {%  capture content  %}
             <div id="tabs-{{ collection.id }}">
-              <ul class="">
+              <ul class="tabs-list-box">
                {%- for product in block.settings.collection.products limit: 8 -%}
-               <li class="">
+               <li class="single-tab-list">
               <a class="image-anchor" href="{{ product.url }}">
         <img src="{{ product.featured_media | img_url: '1200px' }}" alt="{{ product.title }}">
       </a>
