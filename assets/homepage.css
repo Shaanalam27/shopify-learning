@@ -330,3 +330,8 @@ position: sticky;
         transform: translateX(calc(-100% - var(--gap)));
     }
 }
+
+
+.tabs-list-box li{
+text-decoration : none;
+}
