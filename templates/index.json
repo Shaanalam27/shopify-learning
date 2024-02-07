@@ -8,22 +8,15 @@
     "tabs_UPAUwq": {
       "type": "tabs",
       "blocks": {
-        "tab_prkxKH": {
+        "tab_zUrhfx": {
           "type": "tab",
           "settings": {
-            "collection": "men"
-          }
-        },
-        "tab_QUN3w4": {
-          "type": "tab",
-          "settings": {
-            "collection": "women"
+            "collection": "best-sellers"
           }
         }
       },
       "block_order": [
-        "tab_prkxKH",
-        "tab_QUN3w4"
+        "tab_zUrhfx"
       ],
       "settings": {
         "title": ""
