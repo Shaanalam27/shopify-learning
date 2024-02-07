@@ -335,7 +335,7 @@ position: sticky;
   list-style-type : none !important;
   display : grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  gap : 5%;
+  gap : 3%;
   max-width : 1400px;
   margin : auto;
   padding : 50px;
