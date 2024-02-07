@@ -332,8 +332,9 @@ position: sticky;
 }
 
 .tabs-list-box{
-  text-decoration : none;
+  list-style-type : none;
 }
 .tabs-list-box li{
 text-decoration : none;
+  list
 }
