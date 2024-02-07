@@ -7,7 +7,7 @@
 
 .card {
   text-decoration: none;
-  text-align: var(--text-alignment);
+  text-align: center;
 }
 
 .card:not(.ratio) {
@@ -101,7 +101,7 @@
 }
 
 .card-information {
-  text-align: var(--text-alignment);
+  text-align: center;
 }
 
 .card__media,
