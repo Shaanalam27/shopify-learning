@@ -278,7 +278,7 @@ h5,
 .h3,
 .h4,
 .h5 {
-  font-family: 'Satoshi', sans-serif !important ;
+
   font-style: var(--font-heading-style);
   font-weight: 500;
   letter-spacing: calc(var(--font-heading-scale) * 0.06rem);
