@@ -364,6 +364,9 @@ color : #9C3246;
 .single-tab-list .price{
    font-size : 13px;
 }
+.single-tab-list form{
+  width : 100%;
+}
 
 .btn-add-to-cart{
   width : 100%;
