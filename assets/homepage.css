@@ -340,6 +340,12 @@ position: sticky;
   margin : auto;
   padding : 50px;
 }
+.tabs-list-box-mobile{
+  list-style-type : none !important;
+  max-width : 1400px;
+  margin : auto;
+  padding : 30px;
+}
 
 .tabs-list-box li{
 display : flex;
