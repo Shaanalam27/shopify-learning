@@ -340,6 +340,10 @@ position: sticky;
   margin : auto;
   padding : 50px;
 }
+@media (max-width: 768px) {
+       
+    }
+
 .tabs-list-box-mobile{
   list-style-type : none !important;
   max-width : 1400px;
