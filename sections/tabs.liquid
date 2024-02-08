@@ -48,19 +48,23 @@
         <li><a href="#tabs-{{ collection.id }}">{{ collection.title  }}</a></li>
         {%  capture content  %}
             <div id="tabs-{{ collection.id }}">
-             <div class="outer-slick-slider-section">
-  {% for product in collections['all-products'].products %}
-    <div class="inner-slider-slick">
-      <a class="image-anchor" href="{{ product.url }}">
-        <img src="{{ product.featured_media | img_url: '1200px' }}" alt="{{ product.title }}">
+              <ul class="tabs-list-box outer-slick-slider-section">
+               {%- for product in block.settings.collection.products limit: 8 -%}
+               <li class="single-tab-list">
+              <a class="image-anchor" href="{{ product.url }}">
+        <img class="product-card-image" src="{{ product.featured_media | img_url: '' }}" alt="{{ product.title }}">
       </a>
-      <p>{{ product.price }}</p>
-      <a href="{{ product.url }}">
-        <h1>{{ product.title }}</h1>
-      </a>
-    </div>
-  {% endfor %}
-</div>
+                <h1>{{ product.title }}</h1>
+                 <p>{{ product.description }}</p>
+                 <p class="price">Starts at <strong>{{ product.price | money_with_currency }}</strong></p>
+                 <form method="post" action="/cart/add">
+  <input type="hidden" name="id" value="{{ product.variants.first.id }}" />
+  <input style="display:none;" min="1" type="number" id="quantity" name="quantity" value="1"/>
+  <input type="submit" value="Add to cart" class="btn-add-to-cart" />
+</form>
+               </li>
+              {%- endfor -%}
+              </ul>
             </div>
         {%  endcapture %}
         {%  assign tabContent = tabContent | append: content %}
