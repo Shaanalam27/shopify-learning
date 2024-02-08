@@ -364,9 +364,13 @@ position: sticky;
   flex-direction : column !important;
   align-items : center;
   justify-content : center;
+  gap : 10px;
 }
 .ui-tabs .ui-tabs-panel{
   padding : 0 !important;
+}
+.slick-dots{
+  left : -20px !important;
 }
  
 .tabs-list-box li{
