@@ -52,7 +52,7 @@
         <li><a href="#tabs-{{ collection.id }}">{{ collection.title  }}</a></li>
         {%  capture content  %}
             <div id="tabs-{{ collection.id }}">
-              <div class="">
+             
               <ul class="tabs-list-box-mobile slider">
                {%- for product in block.settings.collection.products limit: 8 -%}
                <li class="single-tab-list mobile-tab-list">
@@ -70,7 +70,7 @@
                </li>
               {%- endfor -%}
               </ul>
-                </div>
+               
             </div>
         {%  endcapture %}
         {%  assign tabContent = tabContent | append: content %}
