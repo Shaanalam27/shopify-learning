@@ -341,9 +341,16 @@ position: sticky;
   padding : 50px;
 }
 @media (max-width: 768px) {
-       
+       #tabs{
+         display : none;
+       }
+  #tabs1{
+    display : block;
+  }
     }
-
+ #tabs1{
+    display : none;
+  }
 .tabs-list-box-mobile{
   list-style-type : none !important;
   max-width : 1400px;
