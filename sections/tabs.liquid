@@ -52,8 +52,8 @@
         <li><a href="#tabs-{{ collection.id }}">{{ collection.title  }}</a></li>
         {%  capture content  %}
             <div id="tabs-{{ collection.id }}">
-              <div class="slider">
-              <ul class="tabs-list-box">
+              <div class="">
+              <ul class="tabs-list-box slider">
                {%- for product in block.settings.collection.products limit: 8 -%}
                <li class="single-tab-list">
               <a class="image-anchor" href="{{ product.url }}">
