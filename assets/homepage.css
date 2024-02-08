@@ -346,7 +346,9 @@ position: sticky;
   margin : auto;
   padding : 30px;
 }
-
+mobile-tab-list{
+  justify-content : center;
+}
 .tabs-list-box li{
 display : flex;
   flex-direction : column;
