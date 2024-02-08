@@ -42,13 +42,13 @@
     </div>  
    <div id="tabs1" class="tabs">
       {%  assign tabContent = '' %}
-      <ul class="outer-slick-slider-section">
+      <ul >
       {%  for block in section.blocks %}
        {%  assign collection = collections[block.settings.collection] %}
         <li><a href="#tabs-{{ collection.id }}">{{ collection.title  }}</a></li>
         {%  capture content  %}
             <div id="tabs-{{ collection.id }}">
-              <ul class="tabs-list-box">
+              <ul class="tabs-list-box outer-slick-slider-section">
                {%- for product in block.settings.collection.products limit: 8 -%}
                <li class="single-tab-list">
               <a class="image-anchor" href="{{ product.url }}">
