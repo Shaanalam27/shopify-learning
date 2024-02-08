@@ -362,7 +362,9 @@ position: sticky;
   flex-direction : column !important;
   align-items : center;
   justify-content : center;
-  
+}
+.ui-tabs .ui-tabs-panel{
+  padding : 0px !important;
 }
 .tabs-list-box li{
 display : flex;
