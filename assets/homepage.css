@@ -349,6 +349,7 @@ position: sticky;
 .slick-initialized .slick-slide{
   display : flex !important;
   flex-direction : column !important;
+  align-items : center;
   
 }
 .tabs-list-box li{
