@@ -355,8 +355,8 @@ position: sticky;
   list-style-type : none !important;
   max-width : 100%;
   margin : auto;
-  padding-left : 15px;
-  padding-right : 30px;
+  padding : 30px 30px 30px 15px;
+  
 }
 .slick-initialized .slick-slide{
   display : flex !important;
