@@ -348,7 +348,7 @@ position: sticky;
 }
 .slick-initialized .slick-slide{
   display : flex !important;
-  flex-direction : row !important;
+  flex-direction : column !important;
   
 }
 .tabs-list-box li{
