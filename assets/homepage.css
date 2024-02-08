@@ -347,8 +347,8 @@ position: sticky;
   padding : 30px;
 }
 .slick-initialized .slick-slide{
-  display : flex;
-  flex-direction : row;
+  display : flex !important;
+  flex-direction : row !important;
   
 }
 .tabs-list-box li{
