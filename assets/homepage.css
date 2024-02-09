@@ -451,6 +451,7 @@ font-weight : 400;
   border-radius: 8px;
   scroll-behavior: smooth;
   scrollbar-width: none;
+  border : none;
 }
 .carousel::-webkit-scrollbar {
   display: none;
@@ -467,6 +468,7 @@ font-weight : 400;
   user-select: none;
 }
 
+
 .carousel .card {
   scroll-snap-align: start;
   height: 342px;
@@ -474,8 +476,12 @@ font-weight : 400;
   background: #F3EBEC;
   cursor: pointer;
   padding-bottom: 15px;
+  display : flex;
   flex-direction: column;
   border-radius: 8px;
+  border : none;
+  
+}
 
 @media screen and (max-width: 900px) {
   .wrapper .carousel {
@@ -483,7 +489,7 @@ font-weight : 400;
   }
 }
 @media screen and (max-width: 600px) {
-  .wrapper .carousel {
+  .wrapper-testimonial .carousel {
     grid-auto-columns: 100%;
   }
 }
