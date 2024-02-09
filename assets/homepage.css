@@ -490,7 +490,7 @@ font-weight : 400;
   align-items : center;
 }
 .
-.testimonial-heading {
+.testimonial-name {
     font-family: "Satoshi", sans-serif !important;
     font-size: 25px;
     letter-spacing: -1px;
@@ -498,7 +498,7 @@ font-weight : 400;
     color: black;
 }
 
-.testimonial-heading span {
+.testimonial-name span {
     font-family: "dutch", sans-serif !important;
     font-style: italic;
     font-weight: 400;
