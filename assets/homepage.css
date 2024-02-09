@@ -415,3 +415,12 @@ font-weight : 400;
   border : none;
   cursor : pointer;
 }
+
+.testimonial{
+  width : 100%;
+}
+.testimonial-heading{
+  max-width : 1400px;
+  margin : auto;
+  padding : 0px 50px;
+}
