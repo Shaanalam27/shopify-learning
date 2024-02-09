@@ -483,22 +483,22 @@ font-weight : 400;
   border : none;
 }
 
-.img{
+.first-line{
   display : flex;
   flex-direction : row;
   gap : 10px;
   align-items : center;
 }
 .
-.card .img h1 {
+.first-line h1 {
     font-family: "Satoshi", sans-serif !important;
-    font-size: 25px !important;
+    font-size: 25px;
     letter-spacing: -1px;
     line-height: 25px;
     color: black;
 }
 
-.card .img h1 span {
+.first-line h1 span {
     font-family: "dutch", sans-serif !important;
     font-style: italic;
     font-weight: 400;
