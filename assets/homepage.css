@@ -482,13 +482,15 @@ font-weight : 400;
   border-radius: 8px;
   border : none;
 }
+
 .img{
   display : flex;
   flex-direction : row;
   gap : 10px;
   align-items : center;
 }
-.card h1 {
+.
+.card .img h1 {
     font-family: "Satoshi", sans-serif !important;
     font-size: 25px;
     letter-spacing: -1px;
@@ -496,7 +498,7 @@ font-weight : 400;
     color: black;
 }
 
-.card h1 span {
+.card .img h1 span {
     font-family: "dutch", sans-serif !important;
     font-style: italic;
     font-weight: 400;
