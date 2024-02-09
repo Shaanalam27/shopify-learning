@@ -477,7 +477,7 @@ font-weight : 400;
   cursor: pointer;
   padding-bottom: 15px;
   display : flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items : center;
   border-radius: 8px;
   border : none;
