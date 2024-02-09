@@ -289,44 +289,6 @@ position: sticky;
     font-weight: 400;
 }
 
-.marquee {
-    --duration: 20s;
-    --gap: 0px;
-    display: flex;
-    overflow: hidden;
-    user-select: none;
-    gap: var(--gap);
-    background-color: #DD8A9C;
-}
-
-.marquee__group {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    gap: var(--gap);
-    min-width: 100%;
-    animation: scroll var(--duration) linear infinite;
-    height: 100px;
-}
-
-
-
-.marquee__group img {
-    min-width:  15%;
-    margin-left: 15px;
-    
-}
-
-@keyframes scroll {
-    0% {
-        transform: translateX(0);
-    }
-
-    100% {
-        transform: translateX(calc(-100% - var(--gap)));
-    }
-}
-
 .tabs-list-box{
   list-style-type : none !important;
   display : grid;
@@ -412,6 +374,44 @@ font-weight : 400;
   cursor : pointer;
 }
 
+
+.marquee {
+    --duration: 20s;
+    --gap: 0px;
+    display: flex;
+    overflow: hidden;
+    user-select: none;
+    gap: var(--gap);
+    background-color: #DD8A9C;
+}
+
+.marquee__group {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: var(--gap);
+    min-width: 100%;
+    animation: scroll var(--duration) linear infinite;
+    height: 100px;
+}
+
+
+
+.marquee__group img {
+    min-width:  15%;
+    margin-left: 15px;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(calc(-100% - var(--gap)));
+    }
+}
+
 .testimonial{
   width : 100%;
 }
@@ -433,3 +433,29 @@ font-weight : 400;
   width : 100%;
 }
 
+.testimonial-content {
+    --duration: 20s;
+    --gap: 20px;
+    display: flex;
+    overflow: hidden;
+    user-select: none;
+    gap: var(--gap);
+    background-color: transparent;
+}
+
+.testimonial__marquee_group {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: var(--gap);
+    min-width: 100%;
+    animation: scroll var(--duration) linear infinite;
+    height: 100px;
+}
+
+
+
+.testimonial-item{
+  background-color : blue;
+  min-width : 30%;
+}
