@@ -130,12 +130,52 @@
       </div>
     </div>
     <script>
-        $(function() {
-        $(".testimonial-content").draggable({
-            axis: "x", // Only drag horizontally
-            cursor: "move", // Cursor style while dragging
+      document.addEventListener('DOMContentLoaded', function() {
+    let startX = 0;
+    let dragging = false;
+
+    document.querySelectorAll('.testimonial-item').forEach(item => {
+        item.addEventListener('mousedown', function(event) {
+            startX = event.clientX;
+            dragging = true;
+            this.style.transition = 'none';
+        });
+
+        item.addEventListener('mousemove', function(event) {
+            if (dragging) {
+                const deltaX = event.clientX - startX;
+                this.style.transform = `translateX(${deltaX}px)`;
+            }
+        });
+
+        item.addEventListener('mouseup', function(event) {
+            if (dragging) {
+                dragging = false;
+                const deltaX = event.clientX - startX;
+                const threshold = this.offsetWidth / 2;
+
+                if (deltaX > threshold && this.nextElementSibling) {
+                    this.style.transform = `translateX(${this.offsetWidth}px)`;
+                    this.nextElementSibling.style.transform = 'translateX(0)';
+                } else if (-deltaX > threshold && this.previousElementSibling) {
+                    this.style.transform = `translateX(${-this.offsetWidth}px)`;
+                    this.previousElementSibling.style.transform = 'translateX(0)';
+                } else {
+                    this.style.transform = 'translateX(0)';
+                }
+            }
         });
     });
+
+    document.addEventListener('mouseup', function() {
+        dragging = false;
+        document.querySelectorAll('.testimonial-item').forEach(item => {
+            item.style.transition = 'transform 0.3s ease';
+            item.style.transform = 'translateX(0)';
+        });
+    });
+});
+
     </script>
 {% schema %}
   {
