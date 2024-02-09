@@ -482,6 +482,9 @@ font-weight : 400;
   border-radius: 8px;
   border : none;
 }
+.first-line{
+  display : flex;
+}
 .card h1 {
     font-family: "Satoshi", sans-serif !important;
     font-size: 25px;
