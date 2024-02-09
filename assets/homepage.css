@@ -490,7 +490,7 @@ font-weight : 400;
   align-items : center;
 }
 .
-.testimonial-name {
+.first-line h3 {
     font-family: "Satoshi", sans-serif !important;
     font-size: 25px !important;
     letter-spacing: -1px;
