@@ -427,8 +427,10 @@ font-weight : 400;
   flex-direction : row;
   justify-content : space-between;
 }
-
-.right-icon img{
+.right-icon{
   width : 30%;
+}
+.right-icon img{
+  width : 100%;
 }
 
