@@ -444,7 +444,7 @@ font-weight : 400;
 .wrapper-testimonial .carousel{
   display: grid;
   grid-auto-flow: column;
-  grid-auto-columns: calc((100% / 3) - 12px);
+  grid-auto-columns: calc((100% / 4) - 30px);
   overflow-x: auto;
   scroll-snap-type: x mandatory;
   gap: 16px;
