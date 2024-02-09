@@ -450,7 +450,8 @@ font-weight : 400;
     gap: var(--gap);
     min-width: 100%;
     animation: scroll var(--duration) linear infinite;
-    height: 100px;
+    white-space: nowrap;
+        overflow: hidden;
 }
 
 
