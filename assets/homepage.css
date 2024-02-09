@@ -434,7 +434,7 @@ font-weight : 400;
 }
 
 .testimonial-content {
-    --duration: 20s;
+    --duration: 40s;
     --gap: 20px;
     display: flex;
     overflow: hidden;
