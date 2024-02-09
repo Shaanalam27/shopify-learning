@@ -484,9 +484,9 @@ font-weight : 400;
 }
 .card h1 {
     font-family: "Satoshi", sans-serif !important;
-    font-size: 30px;
+    font-size: 25px;
     letter-spacing: -1px;
-    line-height: 28px;
+    line-height: 25px;
     color: black;
 }
 
@@ -494,6 +494,7 @@ font-weight : 400;
     font-family: "dutch", sans-serif !important;
     font-style: italic;
     font-weight: 400;
+  color: blue;
 }
 
 
