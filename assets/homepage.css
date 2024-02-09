@@ -484,6 +484,7 @@ font-weight : 400;
 }
 .first-line{
   display : flex;
+  flex-direction : row;
 }
 .card h1 {
     font-family: "Satoshi", sans-serif !important;
