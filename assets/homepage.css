@@ -425,4 +425,5 @@ font-weight : 400;
   padding : 50px;
   display : flex;
   flex-direction : row;
+  justify-content : space-between;
 }
