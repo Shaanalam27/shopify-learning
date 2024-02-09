@@ -458,4 +458,5 @@ font-weight : 400;
 .testimonial-item{
   background-color : blue;
   min-width : 30%;
+  min-height : 100px;
 }
