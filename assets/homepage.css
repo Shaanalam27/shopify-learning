@@ -490,7 +490,7 @@ font-weight : 400;
   align-items : center;
 }
 .
-.img h1 {
+.card .img h1 {
     font-family: "Satoshi", sans-serif !important;
     font-size: 25px !important;
     letter-spacing: -1px;
@@ -498,7 +498,7 @@ font-weight : 400;
     color: black;
 }
 
-.img h1 span {
+.card .img h1 span {
     font-family: "dutch", sans-serif !important;
     font-style: italic;
     font-weight: 400;
