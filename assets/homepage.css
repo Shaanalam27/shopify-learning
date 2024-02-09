@@ -429,7 +429,9 @@ font-weight : 400;
 }
 .right-icon{
   width : 75px;
-  margin : auto;
+ display : flex;
+  align-items : center;
+  justify-content : center;
 }
 .right-icon img{
   width : 100%;
