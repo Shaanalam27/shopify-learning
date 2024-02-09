@@ -482,7 +482,7 @@ font-weight : 400;
   border-radius: 8px;
   border : none;
 }
-.first-line{
+.img{
   display : flex;
   flex-direction : row;
 }
