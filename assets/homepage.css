@@ -478,6 +478,7 @@ font-weight : 400;
   padding-bottom: 15px;
   display : flex;
   flex-direction: row;
+  align-items : center;
   border-radius: 8px;
   border : none;
   
