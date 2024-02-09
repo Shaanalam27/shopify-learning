@@ -491,12 +491,10 @@ font-weight : 400;
   gap : 10px;
   align-items : center;
 }
-.first-line img{
-  width : 35px;
+.rating{
+  width : 35%;
 }
-.card img{
-  width : 100%;
-}
+
 
 .first-line h2 {
     font-family: "Satoshi", sans-serif !important;
