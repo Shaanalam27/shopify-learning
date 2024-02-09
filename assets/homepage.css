@@ -489,6 +489,9 @@ font-weight : 400;
   gap : 10px;
   align-items : center;
 }
+.first-line img{
+  width : 60px;
+}
 .
 .first-line h2 {
     font-family: "Satoshi", sans-serif !important;
