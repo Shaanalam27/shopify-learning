@@ -481,8 +481,21 @@ font-weight : 400;
   padding : 30px;
   border-radius: 8px;
   border : none;
-  
 }
+.card h1 {
+    font-family: "Satoshi", sans-serif !important;
+    font-size: 30px;
+    letter-spacing: -1px;
+    line-height: 28px;
+    color: #9c3246;
+}
+
+.card h1 span {
+    font-family: "dutch", sans-serif !important;
+    font-style: italic;
+    font-weight: 400;
+}
+
 
 @media screen and (max-width: 900px) {
   .wrapper-testimonial .carousel {
