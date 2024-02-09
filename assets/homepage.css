@@ -507,7 +507,13 @@ font-weight : 400;
     font-weight: 400;
   color: #9c3246 !important;
 }
-
+.card p{
+   font-family: "Satoshi", sans-serif !important;
+      font-weight: 400;
+  font-size : 14px;
+  color : black;
+  letter-spacing : -0.5px;
+}
 
 @media screen and (max-width: 900px) {
   .wrapper-testimonial .carousel {
