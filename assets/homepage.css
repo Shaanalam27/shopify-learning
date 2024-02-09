@@ -423,4 +423,6 @@ font-weight : 400;
   max-width : 1400px;
   margin : auto;
   padding : 50px;
+  display : flex;
+  flex-direction : row;
 }
