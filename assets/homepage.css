@@ -479,6 +479,7 @@ font-weight : 400;
   padding-bottom: 15px;
   display : flex;
   flex-direction: column;
+  gap : 20px;
   padding : 30px;
   border-radius: 8px;
   border : none;
