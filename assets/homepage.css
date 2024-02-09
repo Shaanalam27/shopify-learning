@@ -492,7 +492,7 @@ font-weight : 400;
 .
 .testimonial-name {
     font-family: "Satoshi", sans-serif !important;
-    font-size: 25px;
+    font-size: 25px !important;
     letter-spacing: -1px;
     line-height: 25px;
     color: black;
