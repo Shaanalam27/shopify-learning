@@ -429,6 +429,7 @@ font-weight : 400;
 }
 .right-icon{
   width : 75px;
+  margin : auto;
 }
 .right-icon img{
   width : 100%;
