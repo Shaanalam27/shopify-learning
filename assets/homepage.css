@@ -566,9 +566,9 @@ font-weight : 400;
       display : flex;
       align-items : center;
       justify-content : left;
-      gap : 15px;
+      gap : 2px;
       }
       .list-pointer img{
-      width : 30px;
+      width : 15px;
       
       }
