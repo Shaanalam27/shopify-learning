@@ -85,6 +85,24 @@
     },
     "image_with_cta_purefemm_bbTWn6": {
       "type": "image-with-cta-purefemm",
+      "blocks": {
+        "pointers_6x8dMw": {
+          "type": "pointers",
+          "settings": {
+            "pointer-text": "<p>he<\/p>"
+          }
+        },
+        "pointers_QiDnDq": {
+          "type": "pointers",
+          "settings": {
+            "pointer-text": ""
+          }
+        }
+      },
+      "block_order": [
+        "pointers_6x8dMw",
+        "pointers_QiDnDq"
+      ],
       "settings": {
       }
     }
