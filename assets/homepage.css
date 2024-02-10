@@ -553,6 +553,9 @@ font-weight : 400;
   .purefemm-cta .left-cta{
     width : 50%;
   }
+    .purefemm-cta .left-cta img{
+      width : 100;
+    }
     .purefemm-cta .right-cta{
     width : 50%;
     
