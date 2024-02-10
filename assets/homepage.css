@@ -545,9 +545,14 @@ font-weight : 400;
     max-width : 1400px;
     margin : auto;
     padding : 50px;
-    background-color : blue;
     min-height : 80vh;
     display : flex;
     align-items : center;
     justify-content : space-between;
   }
+  .purefemm-cta .left-cta{
+    width : 50%;
+  }
+    .purefemm-cta .right-cta{
+    width : 50%;
+    
