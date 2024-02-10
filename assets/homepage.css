@@ -541,7 +541,7 @@ font-weight : 400;
 
   /* image with cta */
 
-  .purefemm-CTA{
+  .purefemm-cta{
     max-width : 1400px;
     margin : auto;
     padding : 50px;
@@ -549,6 +549,5 @@ font-weight : 400;
     min-height : 80vh;
     display : flex;
     align-items : center;
-    flex-direction : row;
     justify-content : space-between;
   }
