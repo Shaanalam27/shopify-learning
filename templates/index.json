@@ -92,15 +92,22 @@
             "pointer-text": "<p>he<\/p>"
           }
         },
+        "pointers_76r6Bq": {
+          "type": "pointers",
+          "settings": {
+            "pointer-text": "<p>hello world<\/p>"
+          }
+        },
         "pointers_QiDnDq": {
           "type": "pointers",
           "settings": {
-            "pointer-text": ""
+            "pointer-text": "<p>hellowordsdfjsoidfj<\/p>"
           }
         }
       },
       "block_order": [
         "pointers_6x8dMw",
+        "pointers_76r6Bq",
         "pointers_QiDnDq"
       ],
       "settings": {
