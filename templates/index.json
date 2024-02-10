@@ -31,6 +31,19 @@
     },
     "homepage_section2_DNUimF": {
       "type": "homepage-section2",
+      "blocks": {
+        "reviews_T97pNz": {
+          "type": "reviews",
+          "settings": {
+            "first-name": "",
+            "last-name": "",
+            "review-text": ""
+          }
+        }
+      },
+      "block_order": [
+        "reviews_T97pNz"
+      ],
       "settings": {
       }
     }
