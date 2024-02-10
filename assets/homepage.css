@@ -561,4 +561,14 @@ font-weight : 400;
     }
     .purefemm-cta .right-cta{
     width : 50%;
-    
+      }
+      .list-pointer{
+      display : flex;
+      align-items : center;
+      justify-content : left;
+      gap : 15px;
+      }
+      .list-pointer img{
+      width : 30px;
+      
+      }
