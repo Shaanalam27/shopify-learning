@@ -579,7 +579,7 @@ font-weight : 400;
 
   .full-width-image{
     width : 100%;
-    height : 90vh;
+    height : 100vh;
     background-image : url("https://cdn.shopify.com/s/files/1/0631/5743/6566/files/Group_265_1.png?v=1707580019");
      background-repeat: no-repeat;
     background-attachment : fixed;
@@ -587,6 +587,4 @@ font-weight : 400;
     background-size : cover;
   }
 
-    .full-width-image-overflow{
-      overflow : hidden;
-    }
+  
