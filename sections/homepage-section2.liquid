@@ -271,6 +271,38 @@ wrapper.addEventListener("mouseleave", autoPlay);
   {
     "name": "purefem hero 2 section",
     "settings": [],
+     "blocks": [
+    {
+      "type": "reviews",
+      "name": "reviews",
+      "limit": 5,
+    
+    "settings": [
+      {
+         "type": "image_picker",
+        "id": "reviewer-image",
+        "label": "reviewer-image"
+      },
+      {
+        "type": "text",
+        "id": "first-name",
+        "label": "first-name" 
+      },
+       {
+        "type": "text",
+        "id": "last-name",
+        "label": "last-name" 
+      },
+      {
+        "type": "text",
+        "id": "review-text",
+        "label": "review-text" 
+      }
+      
+    ]
+  
+    }
+  ],
     "presets" : [{"name" : "purefem hero 2 section"}]
   }
 {% endschema %}
