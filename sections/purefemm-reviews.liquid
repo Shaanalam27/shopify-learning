@@ -20,7 +20,7 @@
         <li class="card">
           <div class="testimonial-top-wrap">
           <div class="first-line">
-           {{ block.settings.reviewer-image | asset_url }}
+           <img src="{{ block.settings.reviewer-image | image_url : '500x' }}" alt="img" draggable="false">
           <h2 class="testimonial-name">{{ block.settings.first-name }} <span>{{ block.settings.last-name }}</span></h2>
          </div>
           <p>
