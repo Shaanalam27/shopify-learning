@@ -63,12 +63,22 @@
             "last-name": "Smith",
             "review-text": "<p>\"I've struggled with digestive issues for years, trying various supplements with minimal success. PureFemm's probiotics have been a game-changer. My gut feels more balanced, and I've noticed a significant reduction in discomfort.<\/p>"
           }
+        },
+        "reviews_WHtgGh": {
+          "type": "reviews",
+          "settings": {
+            "reviewer-image": "shopify:\/\/shop_images\/Ellipse_7_1.png",
+            "first-name": "Olivia",
+            "last-name": "Smith",
+            "review-text": "<p>\"I've struggled with digestive issues for years, trying various supplements with minimal success. PureFemm's probiotics have been a game-changer. My gut feels more balanced, and I've noticed a significant reduction in discomfort.<\/p>"
+          }
         }
       },
       "block_order": [
         "reviews_r9GK3E",
         "reviews_BAmYU8",
-        "reviews_ELnUN7"
+        "reviews_ELnUN7",
+        "reviews_WHtgGh"
       ],
       "settings": {
       }
