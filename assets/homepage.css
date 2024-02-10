@@ -544,4 +544,5 @@ font-weight : 400;
     margin : auto;
     padding : 50px;
     background-color : blue;
+    min-height : 80vh;
   }
