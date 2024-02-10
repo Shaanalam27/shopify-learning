@@ -585,3 +585,7 @@ font-weight : 400;
   background-position: center ;
     background-size : cover;
   }
+
+    .full-width-image-overflow{
+      overflow : hidden;
+    }
