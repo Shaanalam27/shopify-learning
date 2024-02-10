@@ -547,4 +547,5 @@ font-weight : 400;
     min-height : 80vh;
     display : flex;
     align-items : center;
+    justify-content : space-between;
   }
