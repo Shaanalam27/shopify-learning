@@ -41,6 +41,31 @@
           "type": "reviews",
           "settings": {
             "reviewer-image": "shopify:\/\/shop_images\/Ellipse_7_1.png",
+            "first-name": "hello",
+            "last-name": "girl",
+            "review-text": ""
+          }
+        },
+        "reviews_BAmYU8": {
+          "type": "reviews",
+          "settings": {
+            "reviewer-image": "shopify:\/\/shop_images\/Ellipse_7_2.png",
+            "first-name": "",
+            "last-name": "",
+            "review-text": ""
+          }
+        },
+        "reviews_ELnUN7": {
+          "type": "reviews",
+          "settings": {
+            "first-name": "",
+            "last-name": "",
+            "review-text": ""
+          }
+        },
+        "reviews_UR3Yp7": {
+          "type": "reviews",
+          "settings": {
             "first-name": "",
             "last-name": "",
             "review-text": ""
@@ -48,7 +73,10 @@
         }
       },
       "block_order": [
-        "reviews_r9GK3E"
+        "reviews_r9GK3E",
+        "reviews_BAmYU8",
+        "reviews_ELnUN7",
+        "reviews_UR3Yp7"
       ],
       "settings": {
       }
