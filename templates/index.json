@@ -31,19 +31,11 @@
     },
     "homepage_section2_DNUimF": {
       "type": "homepage-section2",
-      "blocks": {
-        "reviews_T97pNz": {
-          "type": "reviews",
-          "settings": {
-            "first-name": "",
-            "last-name": "",
-            "review-text": ""
-          }
-        }
-      },
-      "block_order": [
-        "reviews_T97pNz"
-      ],
+      "settings": {
+      }
+    },
+    "purefemm_reviews_FXQD8R": {
+      "type": "purefemm-reviews",
       "settings": {
       }
     }
@@ -51,6 +43,7 @@
   "order": [
     "homepage_section_bG38N7",
     "tabs_UPAUwq",
-    "homepage_section2_DNUimF"
+    "homepage_section2_DNUimF",
+    "purefemm_reviews_FXQD8R"
   ]
 }
