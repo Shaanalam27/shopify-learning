@@ -545,4 +545,6 @@ font-weight : 400;
     padding : 50px;
     background-color : blue;
     min-height : 80vh;
+    display : flex;
+    align-items : center;
   }
