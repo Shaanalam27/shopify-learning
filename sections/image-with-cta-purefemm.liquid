@@ -16,7 +16,7 @@
           <div class="list-pointer">
             <img src="https://cdn.shopify.com/s/files/1/0631/5743/6566/files/Frame_4.svg?v=1707578115" alt="img" >
             <p class="para-text black-color">
-                  {{ block.settings.pointer-text |  escape }}
+                  {{ block.settings.pointer-text }}
                </p>
           </div>
           {% endfor %}
@@ -36,7 +36,7 @@
     
     "settings": [
       {
-        "type": "richtext",
+        "type": "text",
         "id": "pointer-text",
         "label": "pointer-text" 
       }
