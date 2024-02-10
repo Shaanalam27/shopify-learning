@@ -40,6 +40,7 @@
         "reviews_r9GK3E": {
           "type": "reviews",
           "settings": {
+            "reviewer-image": "shopify:\/\/shop_images\/Ellipse_7_1.png",
             "first-name": "",
             "last-name": "",
             "review-text": ""
