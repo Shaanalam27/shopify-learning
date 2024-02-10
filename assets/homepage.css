@@ -282,10 +282,11 @@ position: sticky;
 .benefit-inner-wrapper h1 {
     font-family: "Satoshi", sans-serif !important;
     font-size: 40px;
-    letter-spacing: -1px;
+    letter-spacing: -1.5px;
     line-height: 35px;
     color: #9c3246;
   font-weight : 700;
+  
 }
 
 .benefit-inner-wrapper h1 span {
