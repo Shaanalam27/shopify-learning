@@ -37,18 +37,17 @@
     "purefemm_reviews_FXQD8R": {
       "type": "purefemm-reviews",
       "blocks": {
-        "reviews_bcbkBG": {
+        "reviews_r9GK3E": {
           "type": "reviews",
           "settings": {
-            "reviewer-image": "shopify:\/\/shop_images\/Ellipse_7_1.png",
-            "first-name": "lisa",
-            "last-name": "john",
-            "review-text": "fhdasiufhasdiufhadufhsidufhaspdiufhasdifhasdkjfnsadjfnasdkjfnsdkjfndskjfn"
+            "first-name": "",
+            "last-name": "",
+            "review-text": ""
           }
         }
       },
       "block_order": [
-        "reviews_bcbkBG"
+        "reviews_r9GK3E"
       ],
       "settings": {
       }
