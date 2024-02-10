@@ -82,12 +82,18 @@
       ],
       "settings": {
       }
+    },
+    "image_with_cta_purefemm_bbTWn6": {
+      "type": "image-with-cta-purefemm",
+      "settings": {
+      }
     }
   },
   "order": [
     "homepage_section_bG38N7",
     "tabs_UPAUwq",
     "homepage_section2_DNUimF",
-    "purefemm_reviews_FXQD8R"
+    "purefemm_reviews_FXQD8R",
+    "image_with_cta_purefemm_bbTWn6"
   ]
 }
