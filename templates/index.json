@@ -89,26 +89,19 @@
         "pointers_6x8dMw": {
           "type": "pointers",
           "settings": {
-            "pointer-text": "<p>he<\/p>"
+            "pointer-text": "<p>A carefully designed product for your health<\/p>"
           }
         },
         "pointers_76r6Bq": {
           "type": "pointers",
           "settings": {
-            "pointer-text": "<p>hello world<\/p>"
-          }
-        },
-        "pointers_QiDnDq": {
-          "type": "pointers",
-          "settings": {
-            "pointer-text": "<p>hellowordsdfjsoidfj<\/p>"
+            "pointer-text": "<p>No half truths, No compromise for health<\/p>"
           }
         }
       },
       "block_order": [
         "pointers_6x8dMw",
-        "pointers_76r6Bq",
-        "pointers_QiDnDq"
+        "pointers_76r6Bq"
       ],
       "settings": {
       }
