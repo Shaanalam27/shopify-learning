@@ -231,7 +231,7 @@ const infiniteExpertScroll = () => {
 
     // Clear existing timeout & start autoplay if mouse is not hovering over expertCarousel
     clearTimeout(timeoutExpertId);
-    if(!expertInnerWrapper.matches(":hover")) autoPlay();
+    if(!expertInnerWrapper.matches(":hover")) autoExpertPlay();
 }
 
 const autoPlay = () => {
@@ -239,7 +239,7 @@ const autoPlay = () => {
     // Autoplay the expertCarousel after every 2500 ms
     timeoutExpertId = setTimeout(() => expertCarousel.scrollLeft += firstExpertCardWidth, 2500);
 }
-autoPlay();
+autoExpertPlay();
 
 expertCarousel.addEventListener("mousedown", dragExpertStart);
 expertCarousel.addEventListener("mousemove", draggingExpert);
