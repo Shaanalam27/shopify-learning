@@ -621,6 +621,12 @@ font-weight : 400;
   color : black;
   letter-spacing : -0.1px;
 }
+.minimal-card h3 span{
+         font-family: "dutch", sans-serif !important;
+    font-style: italic;
+    font-weight: 400;
+  color: #9c3246 !important;
+      }
 
 .minimal-card p {
   margin: 0;
