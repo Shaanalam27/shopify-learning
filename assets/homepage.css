@@ -163,6 +163,7 @@ p {
     font-size: 50px;
     line-height: 45px;
     color: #9c3246;
+  letter-spacing : -1px;
 }
 
 .about-heading-2 {
@@ -172,6 +173,7 @@ p {
     line-height: 45px;
     font-style: italic;
     color: #9c3246;
+   letter-spacing : -1px;
 }
 
 .inner-about-overflow2 {
