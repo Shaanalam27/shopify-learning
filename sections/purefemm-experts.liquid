@@ -48,7 +48,7 @@ max-width : 1400px;
 .expert-inner-wrapper i:last-child{
   right: -22px;
 }
-.expert-inner-wrapper .carousel{
+.expert-inner-wrapper .expertCarousel{
   display: grid;
   grid-auto-flow: column;
   grid-auto-columns: calc((100% / 3) - 12px);
@@ -59,26 +59,26 @@ max-width : 1400px;
   scroll-behavior: smooth;
   scrollbar-width: none;
 }
-.carousel::-webkit-scrollbar {
+.expertCarousel::-webkit-scrollbar {
   display: none;
 }
-.carousel.no-transition {
+.expertCarousel.no-transition {
   scroll-behavior: auto;
 }
-.carousel.dragging {
+.expertCarousel.dragging {
   scroll-snap-type: none;
   scroll-behavior: auto;
 }
-.carousel.dragging .card {
+.expertCarousel.dragging .card {
   cursor: grab;
   user-select: none;
 }
-.carousel :where(.card, .img) {
+.expertCarousel :where(.card, .img) {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.carousel .card {
+.expertCarousel .card {
   scroll-snap-align: start;
   height: 342px;
   list-style: none;
@@ -88,7 +88,7 @@ max-width : 1400px;
   flex-direction: column;
   border-radius: 8px;
 }
-.carousel .card .img {
+.expertCarousel .card .img {
   background: #8B53FF;
   height: 148px;
   width: 148px;
@@ -101,22 +101,22 @@ max-width : 1400px;
   object-fit: cover;
   border: 4px solid #fff;
 }
-.carousel .card h2 {
+.expertCarousel .card h2 {
   font-weight: 500;
   font-size: 1.56rem;
   margin: 30px 0 5px;
 }
-.carousel .card span {
+.expertCarousel .card span {
   color: #6A6D78;
   font-size: 1.31rem;
 }
 @media screen and (max-width: 900px) {
-  .wrapper .carousel {
+  .wrapper .expertCarousel {
     grid-auto-columns: calc((100% / 2) - 9px);
   }
 }
 @media screen and (max-width: 600px) {
-  .wrapper .carousel {
+  .wrapper .expertCarousel {
     grid-auto-columns: 100%;
   }
 }
@@ -126,7 +126,7 @@ max-width : 1400px;
     <div class="experts-wrapper-right">
      <div class="expert-inner-wrapper">
       <i id="left" class="fa-solid fa-angle-left"></i>
-      <ul class="carousel">
+      <ul class="expertCarousel">
         <li class="card">
           <div class="img"><img src="images/img-1.jpg" alt="img" draggable="false"></div>
           <h2>Blanche Pearson</h2>
@@ -164,87 +164,87 @@ max-width : 1400px;
 </div>
 <script>
   const expertInnerWrapper = document.querySelector(".expert-inner-wrapper");
-const carousel = document.querySelector(".carousel");
-const firstCardWidth = carousel.querySelector(".card").offsetWidth;
+const expertCarousel = document.querySelector(".expertCarousel");
+const firstCardWidth = expertCarousel.querySelector(".card").offsetWidth;
 const arrowBtns = document.querySelectorAll(".expert-inner-wrapper i");
-const carouselChildrens = [...carousel.children];
+const expertCarouselChildrens = [...expertCarousel.children];
 
 let isDragging = false, isAutoPlay = true, startX, startScrollLeft, timeoutId;
 
-// Get the number of cards that can fit in the carousel at once
-let cardPerView = Math.round(carousel.offsetWidth / firstCardWidth);
+// Get the number of cards that can fit in the expertCarousel at once
+let cardPerView = Math.round(expertCarousel.offsetWidth / firstCardWidth);
 
-// Insert copies of the last few cards to beginning of carousel for infinite scrolling
-carouselChildrens.slice(-cardPerView).reverse().forEach(card => {
-    carousel.insertAdjacentHTML("afterbegin", card.outerHTML);
+// Insert copies of the last few cards to beginning of expertCarousel for infinite scrolling
+expertCarouselChildrens.slice(-cardPerView).reverse().forEach(card => {
+    expertCarousel.insertAdjacentHTML("afterbegin", card.outerHTML);
 });
 
-// Insert copies of the first few cards to end of carousel for infinite scrolling
-carouselChildrens.slice(0, cardPerView).forEach(card => {
-    carousel.insertAdjacentHTML("beforeend", card.outerHTML);
+// Insert copies of the first few cards to end of expertCarousel for infinite scrolling
+expertCarouselChildrens.slice(0, cardPerView).forEach(card => {
+    expertCarousel.insertAdjacentHTML("beforeend", card.outerHTML);
 });
 
-// Scroll the carousel at appropriate postition to hide first few duplicate cards on Firefox
-carousel.classList.add("no-transition");
-carousel.scrollLeft = carousel.offsetWidth;
-carousel.classList.remove("no-transition");
+// Scroll the expertCarousel at appropriate postition to hide first few duplicate cards on Firefox
+expertCarousel.classList.add("no-transition");
+expertCarousel.scrollLeft = expertCarousel.offsetWidth;
+expertCarousel.classList.remove("no-transition");
 
-// Add event listeners for the arrow buttons to scroll the carousel left and right
+// Add event listeners for the arrow buttons to scroll the expertCarousel left and right
 arrowBtns.forEach(btn => {
     btn.addEventListener("click", () => {
-        carousel.scrollLeft += btn.id == "left" ? -firstCardWidth : firstCardWidth;
+        expertCarousel.scrollLeft += btn.id == "left" ? -firstCardWidth : firstCardWidth;
     });
 });
 
 const dragStart = (e) => {
     isDragging = true;
-    carousel.classList.add("dragging");
-    // Records the initial cursor and scroll position of the carousel
+    expertCarousel.classList.add("dragging");
+    // Records the initial cursor and scroll position of the expertCarousel
     startX = e.pageX;
-    startScrollLeft = carousel.scrollLeft;
+    startScrollLeft = expertCarousel.scrollLeft;
 }
 
 const dragging = (e) => {
     if(!isDragging) return; // if isDragging is false return from here
-    // Updates the scroll position of the carousel based on the cursor movement
-    carousel.scrollLeft = startScrollLeft - (e.pageX - startX);
+    // Updates the scroll position of the expertCarousel based on the cursor movement
+    expertCarousel.scrollLeft = startScrollLeft - (e.pageX - startX);
 }
 
 const dragStop = () => {
     isDragging = false;
-    carousel.classList.remove("dragging");
+    expertCarousel.classList.remove("dragging");
 }
 
 const infiniteScroll = () => {
-    // If the carousel is at the beginning, scroll to the end
-    if(carousel.scrollLeft === 0) {
-        carousel.classList.add("no-transition");
-        carousel.scrollLeft = carousel.scrollWidth - (2 * carousel.offsetWidth);
-        carousel.classList.remove("no-transition");
+    // If the expertCarousel is at the beginning, scroll to the end
+    if(expertCarousel.scrollLeft === 0) {
+        expertCarousel.classList.add("no-transition");
+        expertCarousel.scrollLeft = expertCarousel.scrollWidth - (2 * expertCarousel.offsetWidth);
+        expertCarousel.classList.remove("no-transition");
     }
-    // If the carousel is at the end, scroll to the beginning
-    else if(Math.ceil(carousel.scrollLeft) === carousel.scrollWidth - carousel.offsetWidth) {
-        carousel.classList.add("no-transition");
-        carousel.scrollLeft = carousel.offsetWidth;
-        carousel.classList.remove("no-transition");
+    // If the expertCarousel is at the end, scroll to the beginning
+    else if(Math.ceil(expertCarousel.scrollLeft) === expertCarousel.scrollWidth - expertCarousel.offsetWidth) {
+        expertCarousel.classList.add("no-transition");
+        expertCarousel.scrollLeft = expertCarousel.offsetWidth;
+        expertCarousel.classList.remove("no-transition");
     }
 
-    // Clear existing timeout & start autoplay if mouse is not hovering over carousel
+    // Clear existing timeout & start autoplay if mouse is not hovering over expertCarousel
     clearTimeout(timeoutId);
     if(!expertInnerWrapper.matches(":hover")) autoPlay();
 }
 
 const autoPlay = () => {
     if(window.innerWidth < 800 || !isAutoPlay) return; // Return if window is smaller than 800 or isAutoPlay is false
-    // Autoplay the carousel after every 2500 ms
-    timeoutId = setTimeout(() => carousel.scrollLeft += firstCardWidth, 2500);
+    // Autoplay the expertCarousel after every 2500 ms
+    timeoutId = setTimeout(() => expertCarousel.scrollLeft += firstCardWidth, 2500);
 }
 autoPlay();
 
-carousel.addEventListener("mousedown", dragStart);
-carousel.addEventListener("mousemove", dragging);
+expertCarousel.addEventListener("mousedown", dragStart);
+expertCarousel.addEventListener("mousemove", dragging);
 document.addEventListener("mouseup", dragStop);
-carousel.addEventListener("scroll", infiniteScroll);
+expertCarousel.addEventListener("scroll", infiniteScroll);
 expertInnerWrapper.addEventListener("mouseenter", () => clearTimeout(timeoutId));
 expertInnerWrapper.addEventListener("mouseleave", autoPlay);
 </script>
