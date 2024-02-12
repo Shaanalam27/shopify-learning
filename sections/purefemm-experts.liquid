@@ -169,7 +169,7 @@ const firstExpertCardWidth = expertCarousel.querySelector(".card").offsetWidth;
 const arrowBtns = document.querySelectorAll(".expert-inner-wrapper i");
 const expertCarouselChildrens = [...expertCarousel.children];
 
-let isExpertDragging = false, isExpertAutoPlay = true, startExpertX, startScrollExpertLeft, timeoutId;
+let isExpertDragging = false, isExpertAutoPlay = true, startExpertX, startScrollExpertLeft, timeoutExpertId;
 
 // Get the number of cards that can fit in the expertCarousel at once
 let cardPerView = Math.round(expertCarousel.offsetWidth / firstExpertCardWidth);
@@ -230,14 +230,14 @@ const infiniteScroll = () => {
     }
 
     // Clear existing timeout & start autoplay if mouse is not hovering over expertCarousel
-    clearTimeout(timeoutId);
+    clearTimeout(timeoutExpertId);
     if(!expertInnerWrapper.matches(":hover")) autoPlay();
 }
 
 const autoPlay = () => {
     if(window.innerWidth < 800 || !isExpertAutoPlay) return; // Return if window is smaller than 800 or isExpertAutoPlay is false
     // Autoplay the expertCarousel after every 2500 ms
-    timeoutId = setTimeout(() => expertCarousel.scrollLeft += firstExpertCardWidth, 2500);
+    timeoutExpertId = setTimeout(() => expertCarousel.scrollLeft += firstExpertCardWidth, 2500);
 }
 autoPlay();
 
@@ -245,7 +245,7 @@ expertCarousel.addEventListener("mousedown", dragStart);
 expertCarousel.addEventListener("mousemove", dragging);
 document.addEventListener("mouseup", dragStop);
 expertCarousel.addEventListener("scroll", infiniteScroll);
-expertInnerWrapper.addEventListener("mouseenter", () => clearTimeout(timeoutId));
+expertInnerWrapper.addEventListener("mouseenter", () => clearTimeout(timeoutExpertId));
 expertInnerWrapper.addEventListener("mouseleave", autoPlay);
 </script>
 {% schema %}
