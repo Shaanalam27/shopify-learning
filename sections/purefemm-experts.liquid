@@ -169,7 +169,7 @@ const firstExpertCardWidth = expertCarousel.querySelector(".card").offsetWidth;
 const arrowBtns = document.querySelectorAll(".expert-inner-wrapper i");
 const expertCarouselChildrens = [...expertCarousel.children];
 
-let isExpertDragging = false, isExpertAutoPlay = true, startExpertX, startScrollLeft, timeoutId;
+let isExpertDragging = false, isExpertAutoPlay = true, startExpertX, startScrollExpertLeft, timeoutId;
 
 // Get the number of cards that can fit in the expertCarousel at once
 let cardPerView = Math.round(expertCarousel.offsetWidth / firstExpertCardWidth);
@@ -201,13 +201,13 @@ const dragStart = (e) => {
     expertCarousel.classList.add("dragging");
     // Records the initial cursor and scroll position of the expertCarousel
     startExpertX = e.pageX;
-    startScrollLeft = expertCarousel.scrollLeft;
+    startScrollExpertLeft = expertCarousel.scrollLeft;
 }
 
 const dragging = (e) => {
     if(!isExpertDragging) return; // if isExpertDragging is false return from here
     // Updates the scroll position of the expertCarousel based on the cursor movement
-    expertCarousel.scrollLeft = startScrollLeft - (e.pageX - startExpertX);
+    expertCarousel.scrollLeft = startScrollExpertLeft - (e.pageX - startExpertX);
 }
 
 const dragStop = () => {
