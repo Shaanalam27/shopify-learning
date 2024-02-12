@@ -210,7 +210,7 @@ const draggingExpert = (e) => {
     expertCarousel.scrollLeft = startScrollExpertLeft - (e.pageX - startExpertX);
 }
 
-const dragStop = () => {
+const dragExpertStop = () => {
     isExpertDragging = false;
     expertCarousel.classList.remove("dragging");
 }
@@ -243,7 +243,7 @@ autoPlay();
 
 expertCarousel.addEventListener("mousedown", dragExpertStart);
 expertCarousel.addEventListener("mousemove", draggingExpert);
-document.addEventListener("mouseup", dragStop);
+document.addEventListener("mouseup", dragExpertStop);
 expertCarousel.addEventListener("scroll", infiniteScroll);
 expertInnerWrapper.addEventListener("mouseenter", () => clearTimeout(timeoutExpertId));
 expertInnerWrapper.addEventListener("mouseleave", autoPlay);
