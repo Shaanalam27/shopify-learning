@@ -41,12 +41,12 @@ margin-bottom : 50px;
      background-color: #DD8A9C;
 }
  .faq__question::after {
-     content: '\21B5';
+     content: '+';
      transition: all .5s ease-in-out;
      float: right;
 }
  .faq__toggle:checked + .faq__question::after {
-     transform: rotate(90deg);
+   content: '-';
 }
  .faq__answer {
      max-height: 0;
