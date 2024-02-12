@@ -169,7 +169,7 @@ const firstExpertCardWidth = expertCarousel.querySelector(".card").offsetWidth;
 const arrowBtns = document.querySelectorAll(".expert-inner-wrapper i");
 const expertCarouselChildrens = [...expertCarousel.children];
 
-let isExpertDragging = false, isAutoPlay = true, startX, startScrollLeft, timeoutId;
+let isExpertDragging = false, isExpertAutoPlay = true, startX, startScrollLeft, timeoutId;
 
 // Get the number of cards that can fit in the expertCarousel at once
 let cardPerView = Math.round(expertCarousel.offsetWidth / firstExpertCardWidth);
@@ -235,7 +235,7 @@ const infiniteScroll = () => {
 }
 
 const autoPlay = () => {
-    if(window.innerWidth < 800 || !isAutoPlay) return; // Return if window is smaller than 800 or isAutoPlay is false
+    if(window.innerWidth < 800 || !isExpertAutoPlay) return; // Return if window is smaller than 800 or isExpertAutoPlay is false
     // Autoplay the expertCarousel after every 2500 ms
     timeoutId = setTimeout(() => expertCarousel.scrollLeft += firstExpertCardWidth, 2500);
 }
