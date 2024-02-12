@@ -196,7 +196,7 @@ arrowBtns.forEach(btn => {
     });
 });
 
-const dragStart = (e) => {
+const dragExpertStart = (e) => {
     isExpertDragging = true;
     expertCarousel.classList.add("dragging");
     // Records the initial cursor and scroll position of the expertCarousel
@@ -241,7 +241,7 @@ const autoPlay = () => {
 }
 autoPlay();
 
-expertCarousel.addEventListener("mousedown", dragStart);
+expertCarousel.addEventListener("mousedown", dragExpertStart);
 expertCarousel.addEventListener("mousemove", dragging);
 document.addEventListener("mouseup", dragStop);
 expertCarousel.addEventListener("scroll", infiniteScroll);
