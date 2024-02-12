@@ -603,8 +603,8 @@ font-weight : 400;
   align-items: left;
   border: none;
   padding: 20px;
-  background-color : grey;
-  gap : 20px;
+  background-color : #e9e4e4;
+  gap : 15px;
   border-radius : 30px;
 }
 
