@@ -586,5 +586,43 @@ font-weight : 400;
   background-position: center ;
     background-size : cover;
   }
+      
+      /* minimal cards */
+
+      .pink-cards {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  background-color: #ffc0cb;
+}
+
+.minimal-card {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border: none;
+  padding: 20px;
+  text-align: center;
+}
+
+.minimal-card img {
+  width: 100px;
+  height: 100px;
+  margin-right: 20px;
+}
+
+.minimal-card h3 {
+  margin: 0;
+  font-size: 1.2em;
+  color: #fff;
+}
+
+.minimal-card p {
+  margin: 0;
+  font-size: 0.8em;
+  color: #fff;
+}
 
   
