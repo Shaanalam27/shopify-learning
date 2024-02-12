@@ -231,7 +231,7 @@ const infiniteScroll = () => {
 
     // Clear existing timeout & start autoplay if mouse is not hovering over carousel
     clearTimeout(timeoutId);
-    if(!wrapper.matches(":hover")) autoPlay();
+    if(!expertInnerWrapper.matches(":hover")) autoPlay();
 }
 
 const autoPlay = () => {
@@ -245,8 +245,8 @@ carousel.addEventListener("mousedown", dragStart);
 carousel.addEventListener("mousemove", dragging);
 document.addEventListener("mouseup", dragStop);
 carousel.addEventListener("scroll", infiniteScroll);
-wrapper.addEventListener("mouseenter", () => clearTimeout(timeoutId));
-wrapper.addEventListener("mouseleave", autoPlay);
+expertInnerWrapper.addEventListener("mouseenter", () => clearTimeout(timeoutId));
+expertInnerWrapper.addEventListener("mouseleave", autoPlay);
 </script>
 {% schema %}
   {
