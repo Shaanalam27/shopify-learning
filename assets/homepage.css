@@ -604,6 +604,7 @@ font-weight : 400;
   border: none;
   padding: 20px;
   text-align: center;
+  background-color : grey;
 }
 
 .minimal-card img {
