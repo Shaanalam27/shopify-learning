@@ -246,7 +246,7 @@ expertCarousel.addEventListener("mousemove", draggingExpert);
 document.addEventListener("mouseup", dragExpertStop);
 expertCarousel.addEventListener("scroll", infiniteExpertScroll);
 expertInnerWrapper.addEventListener("mouseenter", () => clearTimeout(timeoutExpertId));
-expertInnerWrapper.addEventListener("mouseleave", autoPlay);
+expertInnerWrapper.addEventListener("mouseleave", autoExpertPlay);
 </script>
 {% schema %}
   {
