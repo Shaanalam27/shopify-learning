@@ -32,44 +32,44 @@
 .experts-wrapper i:last-child{
   right: -22px;
 }
-.experts-wrapper .carousel{
+.experts-wrapper .experts-carousel{
   font-size: 0px;
   cursor: pointer;
   overflow: hidden;
   white-space: nowrap;
   scroll-behavior: smooth;
 }
-.carousel.dragging{
+.experts-carousel.dragging{
   cursor: grab;
   scroll-behavior: auto;
 }
-.carousel.dragging img{
+.experts-carousel.dragging img{
   pointer-events: none;
 }
-.carousel img{
+.experts-carousel img{
   height: 340px;
   object-fit: cover;
   user-select: none;
   margin-left: 14px;
   width: calc(100% / 3);
 }
-.carousel img:first-child{
+.experts-carousel img:first-child{
   margin-left: 0px;
 }
 @media screen and (max-width: 900px) {
-  .carousel img{
+  .experts-carousel img{
     width: calc(100% / 2);
   }
 }
 @media screen and (max-width: 550px) {
-  .carousel img{
+  .experts-carousel img{
     width: 100%;
   }
 }
 </style>
  <div class="experts-wrapper">
       <i id="left" class="fa-solid fa-angle-left"></i>
-      <div class="carousel">
+      <div class="experts-carousel">
         <img src="images/img-1.jpg" alt="img" draggable="false">
         <img src="images/img-2.jpg" alt="img" draggable="false">
         <img src="images/img-3.jpg" alt="img" draggable="false">
@@ -83,79 +83,79 @@
       <i id="right" class="fa-solid fa-angle-right"></i>
     </div>
     <script>
-      const carousel = document.querySelector(".carousel"),
-firstImg = carousel.querySelectorAll("img")[0],
+      const experts-carousel = document.querySelector(".experts-carousel"),
+firstImg = experts-carousel.querySelectorAll("img")[0],
 arrowIcons = document.querySelectorAll(".experts-wrapper i");
 
 let isDragStart = false, isDragging = false, prevPageX, prevScrollLeft, positionDiff;
 
 const showHideIcons = () => {
-    // showing and hiding prev/next icon according to carousel scroll left value
-    let scrollWidth = carousel.scrollWidth - carousel.clientWidth; // getting max scrollable width
-    arrowIcons[0].style.display = carousel.scrollLeft == 0 ? "none" : "block";
-    arrowIcons[1].style.display = carousel.scrollLeft == scrollWidth ? "none" : "block";
+    // showing and hiding prev/next icon according to experts-carousel scroll left value
+    let scrollWidth = experts-carousel.scrollWidth - experts-carousel.clientWidth; // getting max scrollable width
+    arrowIcons[0].style.display = experts-carousel.scrollLeft == 0 ? "none" : "block";
+    arrowIcons[1].style.display = experts-carousel.scrollLeft == scrollWidth ? "none" : "block";
 }
 
 arrowIcons.forEach(icon => {
     icon.addEventListener("click", () => {
         let firstImgWidth = firstImg.clientWidth + 14; // getting first img width & adding 14 margin value
-        // if clicked icon is left, reduce width value from the carousel scroll left else add to it
-        carousel.scrollLeft += icon.id == "left" ? -firstImgWidth : firstImgWidth;
+        // if clicked icon is left, reduce width value from the experts-carousel scroll left else add to it
+        experts-carousel.scrollLeft += icon.id == "left" ? -firstImgWidth : firstImgWidth;
         setTimeout(() => showHideIcons(), 60); // calling showHideIcons after 60ms
     });
 });
 
 const autoSlide = () => {
     // if there is no image left to scroll then return from here
-    if(carousel.scrollLeft - (carousel.scrollWidth - carousel.clientWidth) > -1 || carousel.scrollLeft <= 0) return;
+    if(experts-carousel.scrollLeft - (experts-carousel.scrollWidth - experts-carousel.clientWidth) > -1 || experts-carousel.scrollLeft <= 0) return;
 
     positionDiff = Math.abs(positionDiff); // making positionDiff value to positive
     let firstImgWidth = firstImg.clientWidth + 14;
-    // getting difference value that needs to add or reduce from carousel left to take middle img center
+    // getting difference value that needs to add or reduce from experts-carousel left to take middle img center
     let valDifference = firstImgWidth - positionDiff;
 
-    if(carousel.scrollLeft > prevScrollLeft) { // if user is scrolling to the right
-        return carousel.scrollLeft += positionDiff > firstImgWidth / 3 ? valDifference : -positionDiff;
+    if(experts-carousel.scrollLeft > prevScrollLeft) { // if user is scrolling to the right
+        return experts-carousel.scrollLeft += positionDiff > firstImgWidth / 3 ? valDifference : -positionDiff;
     }
     // if user is scrolling to the left
-    carousel.scrollLeft -= positionDiff > firstImgWidth / 3 ? valDifference : -positionDiff;
+    experts-carousel.scrollLeft -= positionDiff > firstImgWidth / 3 ? valDifference : -positionDiff;
 }
 
 const dragStart = (e) => {
     // updatating global variables value on mouse down event
     isDragStart = true;
     prevPageX = e.pageX || e.touches[0].pageX;
-    prevScrollLeft = carousel.scrollLeft;
+    prevScrollLeft = experts-carousel.scrollLeft;
 }
 
 const dragging = (e) => {
-    // scrolling images/carousel to left according to mouse pointer
+    // scrolling images/experts-carousel to left according to mouse pointer
     if(!isDragStart) return;
     e.preventDefault();
     isDragging = true;
-    carousel.classList.add("dragging");
+    experts-carousel.classList.add("dragging");
     positionDiff = (e.pageX || e.touches[0].pageX) - prevPageX;
-    carousel.scrollLeft = prevScrollLeft - positionDiff;
+    experts-carousel.scrollLeft = prevScrollLeft - positionDiff;
     showHideIcons();
 }
 
 const dragStop = () => {
     isDragStart = false;
-    carousel.classList.remove("dragging");
+    experts-carousel.classList.remove("dragging");
 
     if(!isDragging) return;
     isDragging = false;
     autoSlide();
 }
 
-carousel.addEventListener("mousedown", dragStart);
-carousel.addEventListener("touchstart", dragStart);
+experts-carousel.addEventListener("mousedown", dragStart);
+experts-carousel.addEventListener("touchstart", dragStart);
 
 document.addEventListener("mousemove", dragging);
-carousel.addEventListener("touchmove", dragging);
+experts-carousel.addEventListener("touchmove", dragging);
 
 document.addEventListener("mouseup", dragStop);
-carousel.addEventListener("touchend", dragStop);
+experts-carousel.addEventListener("touchend", dragStop);
     </script>
 {% schema %}
   {
