@@ -234,7 +234,7 @@ const infiniteExpertScroll = () => {
     if(!expertInnerWrapper.matches(":hover")) autoExpertPlay();
 }
 
-const autoPlay = () => {
+const autoExpertPlay = () => {
     if(window.innerWidth < 800 || !isExpertAutoPlay) return; // Return if window is smaller than 800 or isExpertAutoPlay is false
     // Autoplay the expertCarousel after every 2500 ms
     timeoutExpertId = setTimeout(() => expertCarousel.scrollLeft += firstExpertCardWidth, 2500);
