@@ -629,9 +629,12 @@ font-weight : 400;
       }
 
 .minimal-card p {
-  margin: 0;
-  font-size: 0.8em;
-  color: #000000;
+  font-family: "Satoshi", sans-serif !important;
+      font-weight: 400;
+  font-size : 14px;
+  line-height : 18px;
+  color : black;
+  letter-spacing : -0.1px;
 }
 
   
