@@ -105,11 +105,6 @@
       ],
       "settings": {
       }
-    },
-    "purefemm_experts_eDrJzp": {
-      "type": "purefemm-experts",
-      "settings": {
-      }
     }
   },
   "order": [
@@ -117,7 +112,6 @@
     "tabs_UPAUwq",
     "homepage_section2_DNUimF",
     "purefemm_reviews_FXQD8R",
-    "image_with_cta_purefemm_bbTWn6",
-    "purefemm_experts_eDrJzp"
+    "image_with_cta_purefemm_bbTWn6"
   ]
 }
