@@ -120,10 +120,18 @@
             "question": "Why does the subscription stand out?",
             "answer": "The subscription service has been created to avoid that lack of time and logistics becoming a barrier to your well-being. It allows you to receive your supplements at home every month, so you can be truly consistent, for better results. It's 100% flexible and non-binding."
           }
+        },
+        "question_xPbC6c": {
+          "type": "question",
+          "settings": {
+            "question": "Why does the subscription stand out?",
+            "answer": "The subscription service has been created to avoid that lack of time and logistics becoming a barrier to your well-being. It allows you to receive your supplements at home every month, so you can be truly consistent, for better results. It's 100% flexible and non-binding."
+          }
         }
       },
       "block_order": [
-        "question_LrNmmz"
+        "question_LrNmmz",
+        "question_xPbC6c"
       ],
       "settings": {
       }
