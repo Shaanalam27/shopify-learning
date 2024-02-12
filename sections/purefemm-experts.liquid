@@ -1,10 +1,10 @@
 <style>
-  .wrapper{
+  .experts-wrapper{
   display: flex;
   max-width: 1200px;
   position: relative;
 }
-.wrapper i{
+.experts-wrapper i{
   top: 50%;
   height: 44px;
   width: 44px;
@@ -19,20 +19,20 @@
   transform: translateY(-50%);
   transition: transform 0.1s linear;
 }
-.wrapper i:active{
+.experts-wrapper i:active{
   transform: translateY(-50%) scale(0.9);
 }
-.wrapper i:hover{
+.experts-wrapper i:hover{
   background: #f2f2f2;
 }
-.wrapper i:first-child{
+.experts-wrapper i:first-child{
   left: -22px;
   display: none;
 }
-.wrapper i:last-child{
+.experts-wrapper i:last-child{
   right: -22px;
 }
-.wrapper .carousel{
+.experts-wrapper .carousel{
   font-size: 0px;
   cursor: pointer;
   overflow: hidden;
@@ -67,7 +67,7 @@
   }
 }
 </style>
- <div class="wrapper">
+ <div class="experts-wrapper">
       <i id="left" class="fa-solid fa-angle-left"></i>
       <div class="carousel">
         <img src="images/img-1.jpg" alt="img" draggable="false">
@@ -85,7 +85,7 @@
     <script>
       const carousel = document.querySelector(".carousel"),
 firstImg = carousel.querySelectorAll("img")[0],
-arrowIcons = document.querySelectorAll(".wrapper i");
+arrowIcons = document.querySelectorAll(".experts-wrapper i");
 
 let isDragStart = false, isDragging = false, prevPageX, prevScrollLeft, positionDiff;
 
