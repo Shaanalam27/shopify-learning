@@ -20,11 +20,11 @@ max-width : 1400px;
     width : 75%;
   }
 
-    .wrapper {
+    .expert-inner-wrapper {
   width: 100%;
   position: relative;
 }
-.wrapper i {
+.expert-inner-wrapper i {
   top: 50%;
   height: 50px;
   width: 50px;
@@ -39,16 +39,16 @@ max-width : 1400px;
   transform: translateY(-50%);
   transition: transform 0.1s linear;
 }
-.wrapper i:active{
+.expert-inner-wrapper i:active{
   transform: translateY(-50%) scale(0.85);
 }
-.wrapper i:first-child{
+.expert-inner-wrapper i:first-child{
   left: -22px;
 }
-.wrapper i:last-child{
+.expert-inner-wrapper i:last-child{
   right: -22px;
 }
-.wrapper .carousel{
+.expert-inner-wrapper .carousel{
   display: grid;
   grid-auto-flow: column;
   grid-auto-columns: calc((100% / 3) - 12px);
@@ -124,7 +124,7 @@ max-width : 1400px;
 <div class="experts-wrapper">
   <div class="experts-wrapper-left"></div>
     <div class="experts-wrapper-right">
-     <div class="wrapper">
+     <div class="expert-inner-wrapper">
       <i id="left" class="fa-solid fa-angle-left"></i>
       <ul class="carousel">
         <li class="card">
@@ -163,10 +163,10 @@ max-width : 1400px;
     </div>
 </div>
 <script>
-  const wrapper = document.querySelector(".wrapper");
+  const expertInnerWrapper = document.querySelector(".expert-inner-wrapper");
 const carousel = document.querySelector(".carousel");
 const firstCardWidth = carousel.querySelector(".card").offsetWidth;
-const arrowBtns = document.querySelectorAll(".wrapper i");
+const arrowBtns = document.querySelectorAll(".expert-inner-wrapper i");
 const carouselChildrens = [...carousel.children];
 
 let isDragging = false, isAutoPlay = true, startX, startScrollLeft, timeoutId;
