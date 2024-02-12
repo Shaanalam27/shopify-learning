@@ -172,15 +172,15 @@ const expertCarouselChildrens = [...expertCarousel.children];
 let isExpertDragging = false, isExpertAutoPlay = true, startExpertX, startScrollExpertLeft, timeoutExpertId;
 
 // Get the number of cards that can fit in the expertCarousel at once
-let cardPerView = Math.round(expertCarousel.offsetWidth / firstExpertCardWidth);
+let cardExpertPerView = Math.round(expertCarousel.offsetWidth / firstExpertCardWidth);
 
 // Insert copies of the last few cards to beginning of expertCarousel for infinite scrolling
-expertCarouselChildrens.slice(-cardPerView).reverse().forEach(card => {
+expertCarouselChildrens.slice(-cardExpertPerView).reverse().forEach(card => {
     expertCarousel.insertAdjacentHTML("afterbegin", card.outerHTML);
 });
 
 // Insert copies of the first few cards to end of expertCarousel for infinite scrolling
-expertCarouselChildrens.slice(0, cardPerView).forEach(card => {
+expertCarouselChildrens.slice(0, cardExpertPerView).forEach(card => {
     expertCarousel.insertAdjacentHTML("beforeend", card.outerHTML);
 });
 
