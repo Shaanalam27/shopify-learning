@@ -215,7 +215,7 @@ const dragExpertStop = () => {
     expertCarousel.classList.remove("dragging");
 }
 
-const infiniteScroll = () => {
+const infiniteExpertScroll = () => {
     // If the expertCarousel is at the beginning, scroll to the end
     if(expertCarousel.scrollLeft === 0) {
         expertCarousel.classList.add("no-transition");
@@ -244,7 +244,7 @@ autoPlay();
 expertCarousel.addEventListener("mousedown", dragExpertStart);
 expertCarousel.addEventListener("mousemove", draggingExpert);
 document.addEventListener("mouseup", dragExpertStop);
-expertCarousel.addEventListener("scroll", infiniteScroll);
+expertCarousel.addEventListener("scroll", infiniteExpertScroll);
 expertInnerWrapper.addEventListener("mouseenter", () => clearTimeout(timeoutExpertId));
 expertInnerWrapper.addEventListener("mouseleave", autoPlay);
 </script>
