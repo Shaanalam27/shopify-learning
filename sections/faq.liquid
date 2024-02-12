@@ -4,7 +4,8 @@
      border-radius: 8px;
      overflow: hidden;
      padding-bottom:1em;
-
+    max-width : 1000px;
+    margin : auto;
 }
  .faq .faq__toggle {
      display: none;
@@ -49,7 +50,7 @@
 }
 </style>
 
-<div class="page-width faq">
+<div class="faq">
     <h2 class="h1">Frequently Asked Questions</h2>
     {% for block in section.blocks  %} 
     <div class="faq__row">
