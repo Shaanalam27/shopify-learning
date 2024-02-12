@@ -7,7 +7,7 @@
     max-width : 1000px;
     margin : auto;
 }
-  .faq h2{
+  .heading-faq{
         font-family: "Satoshi", sans-serif !important;
     font-size: 40px;
     letter-spacing: -1.5px;
@@ -59,9 +59,8 @@
      padding: 1em;
 }
 </style>
-
+<h2 class="heading-faq">Frequently Asked Questions</h2>
 <div class="faq">
-    <h2 class="h1">Frequently Asked Questions</h2>
     {% for block in section.blocks  %} 
     <div class="faq__row">
         <input type="checkbox" id="question-{{ forloop.index }}" class="faq__toggle">
