@@ -3520,5 +3520,5 @@ details-disclosure > details {
   font-weight : 700;
 }
 .list-menu--inline{
-flex-wrap : nowrap;
+flex-wrap : nowrap !important;
 }
