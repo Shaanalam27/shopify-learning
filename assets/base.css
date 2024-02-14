@@ -3514,6 +3514,6 @@ details-disclosure > details {
   }
 }
 
-.header__inline-menu .list-menu .header__menu-item span{
+.header__menu-item span{
   font-family: 'Satoshi', sans-serif !important ;
 }
