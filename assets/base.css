@@ -3513,3 +3513,7 @@ details-disclosure > details {
     --border-offset: 0px; /* Prevent the border from growing on buttons when this effect is on. */
   }
 }
+
+.header__inline-menu .list-menu .header__menu-item span{
+  font-family: 'Satoshi', sans-serif !important ;
+}
