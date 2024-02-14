@@ -3519,3 +3519,6 @@ details-disclosure > details {
   font-size : 20px;
   font-weight : 700;
 }
+.list-menu--inline{
+flex-wrap : nowrap;
+}
