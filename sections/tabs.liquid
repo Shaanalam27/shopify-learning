@@ -14,7 +14,7 @@
     {%  endif  %}
     <div id="tabs" class="tabs">
       {%  assign tabContent = '' %}
-      <ul>
+      <ul class="slider-for-tabs">
       {%  for block in section.blocks %}
        {%  assign collection = collections[block.settings.collection] %}
         <li><a href="#tabs-{{ collection.id }}">{{ collection.title  }}</a></li>
