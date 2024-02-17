@@ -14,7 +14,7 @@
     {%  endif  %}
     <div id="tabs" class="tabs">
       {%  assign tabContent = '' %}
-      <ul class="slider-for-tabs">
+      <ul class="">
       {%  for block in section.blocks %}
        {%  assign collection = collections[block.settings.collection] %}
         <li><a href="#tabs-{{ collection.id }}">{{ collection.title  }}</a></li>
@@ -49,7 +49,7 @@
   $( function() {
     $( "#tabs" ).tabs();
   } );
-     $('.slider-for-tabs').slick({
+     $('.tabs-list-box').slick({
   dots: false,
   speed: 300,
   slidesToShow: 5,
