@@ -44,60 +44,12 @@
       </ul>   
       {{ tabContent }}
     </div>  
-   <div id="tabs1" class="tabs">
-      {%  assign tabContent = '' %}
-      <ul >
-      {%  for block in section.blocks %}
-       {%  assign collection = collections[block.settings.collection] %}
-        <li><a href="#tabs-{{ collection.id }}">{{ collection.title  }}</a></li>
-        {%  capture content  %}
-            <div id="tabs-{{ collection.id }}">
-             
-              <ul class="tabs-list-box-mobile slider">
-               {%- for product in block.settings.collection.products limit: 8 -%}
-               <li class="single-tab-list mobile-tab-list">
-              <a class="image-anchor" href="{{ product.url }}">
-        <img class="product-card-image" src="{{ product.featured_media | img_url: '' }}" alt="{{ product.title }}">
-      </a>
-                <h1>{{ product.title }}</h1>
-                 <p>{{ product.description }}</p>
-                 <p class="price">Starts at <strong>{{ product.price | money_with_currency }}</strong></p>
-                 <form method="post" action="/cart/add">
-  <input type="hidden" name="id" value="{{ product.variants.first.id }}" />
-  <input style="display:none;" min="1" type="number" id="quantity" name="quantity" value="1"/>
-  <input type="submit" value="Add to cart" class="btn-add-to-cart" />
-</form>
-               </li>
-              {%- endfor -%}
-              </ul>
-               
-            </div>
-        {%  endcapture %}
-        {%  assign tabContent = tabContent | append: content %}
-      {%  endfor %}  
-      </ul>   
-      {{ tabContent }}
-    </div>  
   </div> 
     <script>
   $( function() {
     $( "#tabs" ).tabs();
   } );
-       $( function() {
-    $( "#tabs1" ).tabs();
-  } );
-
-       $(document).ready(function(){
-        $('.slider').slick({
-            slidesToShow: 1,
-            slidesToScroll: 1,
-            dots: true,
-            infinite: true,
-            speed: 300,
-            autoplay: true,
-            autoplaySpeed: 2000 // Adjust as needed
-        });
-    });
+    
   </script>
   <style>
     .tabs { background: none!important;border: none!important}
