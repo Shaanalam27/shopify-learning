@@ -20,7 +20,7 @@
         <li><a href="#tabs-{{ collection.id }}">{{ collection.title  }}</a></li>
         {%  capture content  %}
             <div id="tabs-{{ collection.id }}">
-              <ul class="tabs-list-box">
+              <ul class="tabs-list-box1">
                {%- for product in block.settings.collection.products limit: 8 -%}
                <li class="single-tab-list">
               <a class="image-anchor" href="{{ product.url }}">
@@ -49,7 +49,7 @@
   $( function() {
     $( "#tabs" ).tabs();
   } );
-     $('.tabs-list-box').slick({
+     $('.tabs-list-box1').slick({
   dots: false,
   speed: 300,
   slidesToShow: 5,
