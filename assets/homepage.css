@@ -299,7 +299,7 @@ position: sticky;
     font-weight: 400;
 }
 
-.tabs-list-box{
+.tabs-list-box1{
   list-style-type : none !important;
   display : grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
