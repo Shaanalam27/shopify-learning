@@ -313,15 +313,7 @@ position: sticky;
     padding : 50px;
 }
 
-@media (max-width: 768px) {
-       #tabs{
-         display : none;
-       }
-  #tabs1{
-    display : block !important;
-    overflow-x : hidden;
-  }
-    }
+
  #tabs1{
     display : none;
   }
