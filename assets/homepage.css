@@ -305,10 +305,12 @@ position: sticky;
   gap : 3%;
   max-width : 1400px;
   margin : auto;
-  padding : 50px;
+
 }
 #tabs-307812827286{
   max-width : 1400px;
+   margin : auto;
+    padding : 50px;
 }
 
 @media (max-width: 768px) {
