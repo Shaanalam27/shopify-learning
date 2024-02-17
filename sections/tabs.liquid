@@ -49,28 +49,35 @@
   $( function() {
     $( "#tabs" ).tabs();
   } );
-     $('.tabs-list-box1').slick({
-  dots: false,
-  speed: 300,
-  slidesToShow: 3,
-  slidesToScroll: 1,
-  autoplay: true,
-  autoplaySpeed: 2000,
-  infinite: true,
-  cssEase:'linear',
-  prevArrow:'<button class="slick-arrow slick-prev" ><svg xmlns="http://www.w3.org/2000/svg" width="10" height="18" viewBox="0 0 10 18" fill="none"><path d="M9.00195 16.5L1.50195 9L9.00195 1.5" stroke="#0F0E0E" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/></svg></button>',
-  nextArrow:'<button class="slick-arrow slick-next"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"><g clip-path="url(#clip0_475_3911)"><path d="M8 4.5L15.5 12L8 19.5" stroke="#0F0E0E" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/></g><defs><clipPath id="clip0_475_3911"><rect width="24" height="24" fill="white"/></clipPath></defs></svg></button>',
+   $(document).ready(function(){
+      $('.tabs-list-box1').slick({
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        arrows: true,
+        dots: true,
+        speed: 300,
+        infinite: true,
+        autoplaySpeed: 5000,
+        autoplay: false,
+  prevArrow:'<button class="slick-arrow slick-prev"><svg width="37" height="37" viewBox="0 0 37 37" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="18.4783" cy="18.4783" r="18.4783" transform="matrix(-1 0 0 1 36.957 0)" fill="#DD8A9C"/><path d="M20.7881 13.579L20.0908 12.9348L14.3207 18.2473L20.0908 23.5599L20.7881 22.919L15.7186 18.2473L20.7881 13.579Z" fill="white"/></svg></button>',
+  nextArrow:'<button class="slick-arrow slick-next"><svg width="38" height="37" viewBox="0 0 38 37" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="19.4354" cy="18.4783" r="18.4783" fill="#DD8A9C"/><path d="M17.125 13.579L17.8223 12.9348L23.5924 18.2473L17.8223 23.5599L17.125 22.919L22.1945 18.2473L17.125 13.579Z" fill="white"/></svg></button>',
  
-  responsive: [
-    {
-      breakpoint: 768,
-      settings: {
-        slidesToShow: 2, 
-        slidesToScroll: 1, 
+        responsive: [
+      {
+        breakpoint: 991,
+        settings: {
+          slidesToShow: 2,
+        }
+      },
+      {
+        breakpoint: 767,
+        settings: {
+          slidesToShow: 1,
+        }
       }
-    }
-  ]
-});
+    ]
+      });
+    });
   </script>
   <style>
     .tabs { background: none!important;border: none!important}
