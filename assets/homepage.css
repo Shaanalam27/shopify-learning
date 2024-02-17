@@ -308,6 +308,9 @@ position: sticky;
   margin : auto;
   padding : 50px;
 }
+#tabs-307812827286{
+  max-width : 1400px;
+}
 @media (max-width: 768px) {
        #tabs{
          display : none;
